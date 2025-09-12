@@ -427,16 +427,26 @@
             font-size: 16px;
             line-height: 1.6;
             position: relative;
+            padding: 20px 30px;
+            background: rgba(106, 13, 173, 0.03);
+            border-radius: 10px;
+            border-left: 4px solid var(--light-purple);
         }
 
         .testimonial-content p::before {
             content: '"';
-            font-size: 48px;
+            font-size: 24px;
             color: var(--light-purple);
-            position: absolute;
-            left: -15px;
-            top: -10px;
-            font-family: serif;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .testimonial-content p::after {
+            content: '"';
+            font-size: 24px;
+            color: var(--light-purple);
+            font-weight: bold;
+            margin-left: 5px;
         }
 
         .testimonial-author {
@@ -1003,7 +1013,7 @@
                 <div class="pricing-card">
                     <h4>Coaching personnalisé</h4>
                     <div class="price">À partir de 160€ HT</div>
-                    <p>1 session : 160€ HT<br>5 sessions : 720€ HT<br>10 sessions : 1 280€ HT</p>
+                    <p>1 session (2h) : 160€ HT<br>5 sessions (10h) : 720€ HT<br>10 sessions (20h) : 1 280€ HT</p>
                 </div>
             </div>
 
