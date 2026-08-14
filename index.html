@@ -77,11 +77,17 @@
             text-decoration: none;
         }
 
-        .logo img {
-            height: 40px;
-            width: auto;
-            max-width: 200px;
-            object-fit: contain;
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-dark);
+            letter-spacing: -1px;
+            line-height: 1;
+        }
+
+        .logo-text em {
+            color: #7C3AED;
+            font-style: normal;
         }
 
         .nav-menu {
@@ -503,6 +509,19 @@
             padding: 80px 0;
         }
 
+        .network {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .pricing-card h4 em {
+            font-style: normal;
+        }
+
+        .pricing-card h4 .em-pilot { color: #1E5AAE; }
+        .pricing-card h4 .em-devis { color: #D4A84B; }
+        .pricing-card h4 .em-prix { color: #3BB972; }
+
         .pricing-essential {
             background: var(--gradient-purple);
             color: white;
@@ -754,7 +773,7 @@
         <div class="container">
             <nav class="nav">
                 <a href="#" class="logo">
-                    <img src="nexolink-logo.png" alt="nexoLink">
+                    <span class="logo-text">nexo<em>Link</em></span>
                 </a>
                 <ul class="nav-menu">
                     <li><a href="#approche">Approche</a></li>
@@ -1016,7 +1035,7 @@
             <h3 style="text-align: center; font-size: 26px; margin-bottom: 30px; color: var(--text-dark);">Licences outils</h3>
             <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 860px; margin: 0 auto 30px; align-items: stretch;">
                 <div class="pricing-card" style="display: flex; flex-direction: column; text-align: center;">
-                    <h4 style="margin-top: 0; margin-bottom: 0;">Pack nexoPilot + nexoDevis</h4>
+                    <h4 style="margin-top: 0; margin-bottom: 0;">Pack nexo<em class="em-pilot">Pilot</em> + nexo<em class="em-devis">Devis</em></h4>
                     <div class="price" style="margin-top: 10px; margin-bottom: 5px;">40€ HT/mois/client</div>
                     <p style="margin: 0 0 20px 0; font-size: 13px; color: var(--text-gray); font-style: italic;">Les deux outils sont indissociables</p>
                     <p style="line-height: 2; text-align: center; margin: 0 0 20px 0;">
@@ -1027,7 +1046,7 @@
                 </div>
 
                 <div class="pricing-card" style="display: flex; flex-direction: column; text-align: center;">
-                    <h4 style="margin-top: 0; margin-bottom: 0;">nexoPrix</h4>
+                    <h4 style="margin-top: 0; margin-bottom: 0;">nexo<em class="em-prix">Prix</em></h4>
                     <div class="price" style="margin-top: 10px; margin-bottom: 5px;">20€ HT/mois/client</div>
                     <p style="margin: 0 0 20px 0; font-size: 13px; color: var(--text-gray); font-style: italic;">Agent d'analyse de chiffrage</p>
                     <p style="line-height: 2; text-align: center; margin: 0;">
@@ -1063,6 +1082,34 @@
             </div>
         </div>
     </section>
+    <!-- Réseau Section -->
+    <section class="network" id="reseau">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Les consultants du réseau nexoLink</h2>
+                <p class="section-subtitle">
+                    Un réseau d'experts présents partout en France, au plus près des TPE/PME.
+                </p>
+            </div>
+            <div style="max-width: 520px; margin: 0 auto;">
+                <!-- CARTE-CONSULTANTS:DEBUT -->
+                <svg viewBox="0 0 480 472" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte de France des consultants nexoLink" style="width: 100%; height: auto; display: block;">
+                    <path d="M 261.5,23.0 L 243.6,26.9 L 235.1,37.8 L 233.7,54.1 L 233.4,63.9 L 217.4,77.3 L 187.6,88.1 L 184.5,99.0 L 188.6,102.5 L 165.5,106.4 L 137.7,103.4 L 125.8,91.1 L 115.0,87.6 L 127.9,120.7 L 129.6,141.0 L 111.9,140.5 L 102.1,139.0 L 77.3,134.1 L 45.8,137.0 L 26.4,152.8 L 20.0,171.1 L 38.3,182.4 L 66.5,186.4 L 75.0,198.2 L 101.1,208.6 L 107.9,222.9 L 120.4,246.6 L 141.8,263.4 L 145.9,290.1 L 144.8,292.5 L 140.1,320.7 L 141.4,337.5 L 138.4,350.3 L 131.6,387.3 L 120.1,401.2 L 136.7,417.0 L 170.6,429.3 L 202.9,434.3 L 228.3,439.2 L 248.7,451.5 L 279.2,445.6 L 288.3,447.6 L 283.9,431.8 L 284.3,412.0 L 306.3,399.7 L 320.9,393.3 L 331.1,397.2 L 348.4,398.2 L 362.6,404.6 L 370.8,409.1 L 382.0,414.5 L 388.8,415.5 L 406.1,406.1 L 419.0,392.3 L 427.4,384.9 L 435.6,380.4 L 440.7,361.7 L 420.6,357.7 L 416.6,338.0 L 420.0,315.8 L 421.7,298.5 L 414.9,278.7 L 391.1,261.4 L 386.4,250.6 L 399.6,232.8 L 418.3,204.7 L 438.3,194.3 L 437.9,167.6 L 445.4,142.9 L 460.0,124.7 L 450.5,121.7 L 420.0,117.8 L 404.7,108.4 L 391.1,101.0 L 381.0,98.5 L 366.4,98.5 L 350.4,83.7 L 345.3,68.9 L 323.3,73.8 L 315.8,59.0 L 289.4,39.3 L 279.2,36.8 L 267.3,20.0 Z" fill="rgba(106, 13, 173, 0.05)" stroke="var(--light-purple)" stroke-width="2" stroke-linejoin="round"/>
+                    <circle cx="163.3" cy="334.8" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="192.3" cy="242.7" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="187.9" cy="243.6" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="385.4" cy="318.0" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="232.5" cy="387.6" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="340.6" cy="140.0" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="239.1" cy="399.7" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="275.7" cy="141.4" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="247.1" cy="403.7" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                </svg>
+                <!-- CARTE-CONSULTANTS:FIN -->
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
