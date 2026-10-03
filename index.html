@@ -1,1317 +1,1046 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nexoLink : le club des consultants en contrôle de gestion</title>
-    <meta name="description" content="Club de consultants indépendants en contrôle de gestion et pilotage de TPE/PME : entraide, méthode et 3 outils à déployer chez vos clients. Tarifs publics.">
-    <link rel="canonical" href="https://www.nexolink.fr/">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-    <!-- Aperçu au partage (LinkedIn, messageries) -->
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="nexoLink">
-    <meta property="og:title" content="nexoLink : le club des consultants en contrôle de gestion">
-    <meta property="og:description" content="Club de consultants indépendants en contrôle de gestion et pilotage de TPE/PME : entraide, méthode et 3 outils à déployer chez vos clients. Tarifs publics.">
-    <meta property="og:url" content="https://www.nexolink.fr/">
-    <meta property="og:image" content="https://www.nexolink.fr/og-nexolink.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Données structurées -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nexoLink : le club des consultants en contrôle de gestion</title>
+<meta name="description" content="Club de consultants indépendants en contrôle de gestion et pilotage de TPE/PME : entraide, méthode et 3 outils à déployer chez vos clients. Tarifs publics.">
+<link rel="canonical" href="https://www.nexolink.fr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="nexoLink">
+<meta property="og:title" content="nexoLink : le club des consultants en contrôle de gestion">
+<meta property="og:description" content="Club de consultants indépendants en contrôle de gestion et pilotage de TPE/PME : entraide, méthode et 3 outils à déployer chez vos clients. Tarifs publics.">
+<meta property="og:url" content="https://www.nexolink.fr/">
+<meta property="og:image" content="https://www.nexolink.fr/og-nexolink.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.nexolink.fr/#organisation",
+      "name": "nexoLink",
+      "legalName": "nexSphere SAS",
+      "url": "https://www.nexolink.fr/",
+      "logo": "https://www.nexolink.fr/nexolink-logo.png",
+      "email": "info@nexolink.fr",
+      "description": "Club de consultants indépendants en contrôle de gestion et pilotage de TPE/PME : entraide, méthode et 3 outils à déployer chez vos clients. Tarifs publics.",
+      "areaServed": "FR"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.nexolink.fr/#site",
+      "url": "https://www.nexolink.fr/",
+      "name": "nexoLink",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://www.nexolink.fr/#organisation"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "Organization",
-          "@id": "https://www.nexolink.fr/#organisation",
-          "name": "nexoLink",
-          "legalName": "nexSphere SAS",
-          "url": "https://www.nexolink.fr/",
-          "logo": "https://www.nexolink.fr/nexolink-logo.png",
-          "email": "info@nexolink.fr",
-          "areaServed": "FR"
+          "@type": "Question",
+          "name": "nexoLink est-il une franchise ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. nexoLink est un club : vous restez indépendant, vous gardez votre nom, vos clients et vos honoraires. Vous réglez une adhésion annuelle de 1 200 € HT, puis des licences uniquement pour vos clients actifs. Il n'y a aucun pourcentage sur votre chiffre d'affaires."
+          }
         },
         {
-          "@type": "WebSite",
-          "@id": "https://www.nexolink.fr/#site",
-          "url": "https://www.nexolink.fr/",
-          "name": "nexoLink",
-          "inLanguage": "fr-FR",
-          "publisher": {
-            "@id": "https://www.nexolink.fr/#organisation"
+          "@type": "Question",
+          "name": "Combien ça coûte avec 5 clients ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1 200 € HT d'adhésion par an, plus 40 € HT par mois et par client actif pour le pack nexoPilot + nexoDevis. Avec 5 clients, cela représente 200 € HT de licences par mois. Le pack est plafonné à 13 licences, soit 520 € HT par mois."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Je démarre mon activité, est-ce fait pour moi ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Tant que vous n'avez pas de client actif, vous ne payez aucune licence, seulement l'adhésion. Les formations aux outils et l'entraide du Club sont là pour vous aider à réussir vos premières missions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À quels clients s'adressent les outils ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aux dirigeants de TPE et PME, notamment dans le bâtiment et les services : toute entreprise qui a besoin de connaître son coût de revient, son seuil de rentabilité et la rentabilité de chaque affaire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mes clients ont plusieurs activités, les outils le gèrent-ils ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, c'est même l'un de leurs points forts. nexoPilot calcule un coût de revient, des objectifs et un résultat pour chaque activité : la charpente et la couverture d'un charpentier-couvreur, ou le bois, le métal et le PVC d'un menuisier."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il être contrôleur de gestion de formation ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il faut être à l'aise avec les chiffres d'une entreprise et aimer les expliquer simplement. Contrôleurs de gestion, DAF, cadres financiers : parlons de votre parcours lors d'un premier échange."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment se passe le premier échange ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "30 minutes en visio, sans engagement. Nous vous présentons le Club et les outils, vous nous parlez de votre projet, et vous décidez ensuite à votre rythme."
           }
         }
       ]
     }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary-purple: #6A0DAD;
-            --light-purple: #9966CC;
-            --accent-purple: #8E4585;
-            --gradient-purple: linear-gradient(135deg, #6A0DAD 0%, #9966CC 100%);
-            --text-dark: #2D3142;
-            --text-gray: #4F5665;
-            --text-light: #6B7280;
-            --bg-light: #F8FAFC;
-            --bg-white: #FFFFFF;
-            --accent-gold: #F59E0B;
-            --border-light: #E5E7EB;
-            --shadow: 0 10px 30px rgba(106, 13, 173, 0.1);
-            --shadow-hover: 0 20px 50px rgba(106, 13, 173, 0.2);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background: var(--bg-white);
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .container-wide {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header & Navigation */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            border-bottom: 1px solid var(--border-light);
-            transition: all 0.3s ease;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        .logo-text {
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--text-dark);
-            letter-spacing: -1px;
-            line-height: 1;
-        }
-
-        .logo-text em {
-            color: #7C3AED;
-            font-style: normal;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-menu a:hover {
-            color: var(--primary-purple);
-        }
-
-        .nav-cta {
-            background: var(--gradient-purple);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .nav-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow);
-        }
-
-        /* Mobile Menu */
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            color: var(--primary-purple);
-            cursor: pointer;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 120px 0 80px;
-            background: linear-gradient(135deg, rgba(106, 13, 173, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -25%;
-            width: 100%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(106, 13, 173, 0.1) 0%, transparent 70%);
-            z-index: -1;
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            min-height: 500px;
-        }
-
-        .hero-text h1 {
-            font-size: 56px;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            background: var(--gradient-purple);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-slogan {
-            font-size: 22px;
-            color: var(--text-gray);
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-
-        .hero-description {
-            font-size: 18px;
-            color: var(--text-light);
-            margin-bottom: 40px;
-            line-height: 1.7;
-        }
-
-        .hero-cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: var(--gradient-purple);
-            color: white;
-            padding: 15px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow);
-        }
-
-        .hero-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .hero-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-graphic {
-            width: 100%;
-            max-width: 400px;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: var(--shadow-hover);
-        }
-
-        .hero-illustration {
-            width: 140%;
-            height: 140%;
-            object-fit: cover;
-            border-radius: 20px;
-            transform: scale(0.7);
-        }
-
-        /* Approach Section */
-        .approach {
-            padding: 80px 0;
-            background: var(--bg-light);
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title {
-            font-size: 42px;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 15px;
-        }
-
-        .section-subtitle {
-            font-size: 18px;
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .approach-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .approach-card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .approach-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow);
-        }
-
-        .approach-icon {
-            width: 80px;
-            height: 80px;
-            background: var(--gradient-purple);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: white;
-            font-size: 28px;
-            font-weight: 700;
-        }
-
-        .approach-card h3 {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 15px;
-        }
-
-        .approach-card p {
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-
-        /* Services Section */
-        .services {
-            padding: 80px 0;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
-
-        .service-card {
-            background: white;
-            border: 2px solid var(--border-light);
-            border-radius: 20px;
-            padding: 40px;
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover {
-            border-color: var(--light-purple);
-            box-shadow: var(--shadow);
-            transform: translateY(-5px);
-        }
-
-        .service-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-purple);
-            color: white;
-            border-radius: 50%;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 15px;
-        }
-
-        .service-card p {
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-
-        /* Value Proposition Section */
-        .value-proposition {
-            padding: 80px 0;
-            background: var(--bg-light);
-        }
-
-        .value-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .value-item {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .value-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow);
-        }
-
-        .value-icon {
-            font-size: 48px;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .value-item h4 {
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 10px;
-        }
-
-        .value-item p {
-            color: var(--text-light);
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-            padding: 80px 0;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            align-items: start;
-        }
-
-        .testimonial-card {
-            background: white;
-            border: 2px solid var(--border-light);
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-        }
-
-        .testimonial-card:hover {
-            border-color: var(--light-purple);
-            transform: translateY(-5px);
-            box-shadow: var(--shadow);
-        }
-
-        .testimonial-content {
-            margin-bottom: 25px;
-        }
-
-        .testimonial-content p {
-            font-style: italic;
-            color: var(--text-gray);
-            font-size: 16px;
-            line-height: 1.6;
-            position: relative;
-            padding: 20px 30px;
-            background: rgba(106, 13, 173, 0.03);
-            border-radius: 10px;
-            border-left: 4px solid var(--light-purple);
-        }
-
-        .testimonial-content p::before {
-            content: '"';
-            font-size: 24px;
-            color: var(--light-purple);
-            font-weight: bold;
-            margin-right: 5px;
-        }
-
-        .testimonial-content p::after {
-            content: '"';
-            font-size: 24px;
-            color: var(--light-purple);
-            font-weight: bold;
-            margin-left: 5px;
-        }
-
-        .testimonial-content p.testimonial-long:not(.expanded) {
-            display: -webkit-box;
-            -webkit-line-clamp: 12;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .testimonial-content p.testimonial-long:not(.expanded)::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 23px;
-            margin: 0;
-            z-index: 1;
-            background: linear-gradient(rgba(106, 13, 173, 0.03), rgba(106, 13, 173, 0.03)), white;
-            border-radius: 0 0 10px 0;
-        }
-
-        .testimonial-toggle {
-            background: none;
-            border: none;
-            padding: 0;
-            margin-top: 12px;
-            font-family: inherit;
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--primary-purple);
-            cursor: pointer;
-        }
-
-        .testimonial-toggle:hover {
-            text-decoration: underline;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .author-info h5 {
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 2px;
-        }
-
-        .author-info span {
-            font-size: 14px;
-            color: var(--text-light);
-        }
-
-        /* Differentiation Section */
-        .differentiation {
-            padding: 80px 0;
-            background: var(--bg-light);
-        }
-
-        .diff-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .diff-item {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            border-left: 4px solid var(--primary-purple);
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .diff-item h4 {
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--primary-purple);
-            margin-bottom: 10px;
-        }
-
-        .diff-item p {
-            color: var(--text-light);
-        }
-
-        /* Pricing Section */
-        .pricing {
-            padding: 80px 0;
-        }
-
-        .network {
-            padding: 80px 0;
-            background: var(--bg-light);
-        }
-
-        .pricing-card h4 em {
-            font-style: normal;
-        }
-
-        .pricing-card h4 .em-pilot { color: #1E5AAE; }
-        .pricing-card h4 .em-devis { color: #D4A84B; }
-        .pricing-card h4 .em-prix { color: #3BB972; }
-
-        .pricing-essential {
-            background: var(--gradient-purple);
-            color: white;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            margin-bottom: 60px;
-            box-shadow: var(--shadow-hover);
-        }
-
-        .pricing-essential h3 {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .pricing-essential .price {
-            font-size: 36px;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        .pricing-essential p {
-            opacity: 0.9;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .pricing-card {
-            background: white;
-            border: 2px solid var(--border-light);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .pricing-card:hover {
-            border-color: var(--light-purple);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow);
-        }
-
-        .pricing-card.featured {
-            border-color: var(--primary-purple);
-            box-shadow: var(--shadow);
-        }
-
-        .pricing-card h4 {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 10px;
-        }
-
-        .pricing-card .price {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-purple);
-            margin-bottom: 15px;
-        }
-
-        .pricing-card p {
-            color: var(--text-light);
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        .featured-badge {
-            background: var(--accent-gold);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background: var(--bg-light);
-        }
-
-        .contact-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: var(--gradient-purple);
-            color: white;
-            padding: 20px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
-            margin-top: 30px;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow);
-        }
-
-        .contact-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .contact-email {
-            color: var(--primary-purple);
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 18px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--text-dark);
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        .footer p {
-            opacity: 0.8;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .nav-menu.open {
-                display: flex;
-                flex-direction: column;
-                gap: 0;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--bg-white);
-                padding: 10px 20px 20px;
-                border-bottom: 1px solid var(--border-light);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-            }
-
-            .nav-menu.open a {
-                display: block;
-                padding: 12px 0;
-            }
-
-            .mobile-menu-toggle {
-                display: block;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-                text-align: center;
-            }
-
-            .hero-text h1 {
-                font-size: 42px;
-            }
-
-            .hero-slogan {
-                font-size: 18px;
-            }
-
-            .section-title {
-                font-size: 32px;
-            }
-
-            .approach-grid,
-            .services-grid,
-            .value-grid,
-            .testimonials-grid,
-            .diff-grid,
-            .pricing-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .container,
-            .container-wide {
-                padding: 0 15px;
-            }
-
-            .hero {
-                padding: 100px 0 60px;
-            }
-
-            .approach,
-            .services,
-            .value-proposition,
-            .testimonials,
-            .differentiation,
-            .pricing,
-            .contact {
-                padding: 60px 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-text h1 {
-                font-size: 36px;
-            }
-
-            .section-title {
-                font-size: 28px;
-            }
-
-            .pricing-essential .price {
-                font-size: 28px;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease-out forwards;
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Utility Classes */
-        .text-center {
-            text-align: center;
-        }
-
-        .mb-20 {
-            margin-bottom: 20px;
-        }
-
-        .mb-30 {
-            margin-bottom: 30px;
-        }
-    </style>
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&family=Inter:wght@700&display=swap">
+<style>
+/* Mise en page : colonne de 1120 px, titres alignés à gauche, sections qui alternent texte et vrais écrans des outils.
+   Une seule bande sombre, réservée à l'appel final. Le violet nexoLink sert d'accent, le bleu nuit nexSphere porte le texte. */
+:root {
+  --ink: #0F0A2E;
+  --violet: #7C3AED;
+  --violet-deep: #6A0DAD;
+  --lilac: #EDE5FA;
+  --mist: #F8F5FD;
+  --paper: #FFFFFF;
+  --muted: #58536F;
+  --line: #E3DCF1;
+  --gold: #E3A72B;
+  --pilot: #1E5AAE;
+  --devis: #D4A84B;
+  --devis-ink: #8F6408;
+  --prix: #3BB972;
+  --prix-ink: #18774A;
+  --loss: #B3261E;
+  --chat-bg: #0E1621;
+  --chat-bot: #182533;
+  --chat-me: #2B5278;
+  --chat-text: #E8EEF5;
+  --chat-key: #7FD1A6;
+  --on-ink: #FFFFFF;
+  --on-ink-soft: #CFC8E8;
+  --display: 'Bricolage Grotesque', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  --body: 'DM Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --logo: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --r: 14px;
+  --shadow: 0 24px 60px -24px rgba(15, 10, 46, .28);
+  color-scheme: light;
+}
+* { box-sizing: border-box; margin: 0; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--violet); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1120px; margin-inline: auto; padding-inline: 20px; }
+section { scroll-margin-top: 84px; }
+.band { padding-block: 88px; }
+.band-mist { background: var(--mist); }
+.band-lilac { background: var(--lilac); }
+
+/* Typographie */
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; letter-spacing: -0.015em; }
+h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.1; font-weight: 700; }
+h3 { font-size: 22px; line-height: 1.2; font-weight: 650; }
+.eyebrow {
+  display: block; font-family: var(--body); font-size: 13px; font-weight: 700;
+  letter-spacing: .09em; text-transform: uppercase; color: var(--violet); margin-bottom: 14px;
+}
+.lead { font-size: 19px; color: var(--muted); max-width: 36em; }
+.section-head { display: grid; gap: 14px; max-width: 46em; margin-bottom: 48px; }
+.section-head p { color: var(--muted); font-size: 18px; }
+.mark { background: linear-gradient(transparent 64%, rgba(227, 167, 43, .5) 64%, rgba(227, 167, 43, .5) 94%, transparent 94%); }
+.wm { font-family: var(--logo); font-weight: 700; letter-spacing: -0.03em; }
+.wm em { font-style: normal; }
+.wm .p { color: var(--pilot); }
+.wm .d { color: var(--devis-ink); }
+.wm .x { color: var(--prix-ink); }
+
+/* Boutons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font: 700 16px/1 var(--body); text-decoration: none; border-radius: 12px;
+  padding: 16px 24px; border: 2px solid transparent; cursor: pointer;
+  transition: background-color .15s ease, transform .15s ease;
+}
+.btn-primary { background: var(--violet); color: var(--on-ink); }
+.btn-primary:hover { background: var(--violet-deep); }
+.btn-light { background: var(--paper); color: var(--ink); }
+.btn-light:hover { background: var(--lilac); }
+.btn-sm { padding: 11px 16px; font-size: 15px; }
+.link { font-weight: 700; color: var(--violet-deep); text-underline-offset: 4px; }
+
+/* Bandeau maquette */
+.ribbon { background: var(--ink); color: var(--on-ink-soft); font-size: 13px; text-align: center; padding: 8px 16px; }
+
+/* En-tête */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+  background: rgba(255, 255, 255, .94); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.bar { display: flex; align-items: center; gap: 24px; min-height: 68px; }
+.logo { font-family: var(--logo); font-weight: 700; font-size: 26px; letter-spacing: -0.04em; text-decoration: none; color: var(--ink); line-height: 1; }
+.logo em { font-style: normal; color: var(--violet); }
+.nav { display: flex; gap: 26px; margin-left: auto; }
+.nav a { text-decoration: none; font-weight: 500; font-size: 16px; color: var(--ink); padding-block: 6px; border-bottom: 2px solid transparent; }
+.nav a:hover { border-bottom-color: var(--violet); }
+.burger { display: none; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); cursor: pointer; padding: 12px 10px; flex-direction: column; justify-content: space-between; }
+.burger span { display: block; height: 2px; background: var(--ink); border-radius: 2px; }
+
+/* Hero */
+.hero { background: var(--mist); padding-block: 72px 88px; overflow: hidden; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(42px, 6.2vw, 70px); line-height: 1.0; font-weight: 750; margin-bottom: 22px; }
+.hero h1 .kicker {
+  display: block; font-family: var(--body); font-size: 14px; font-weight: 700; line-height: 1.4;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--violet); margin-bottom: 18px;
+}
+.hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; margin-top: 30px; }
+.trust { list-style: none; padding: 0; margin-top: 30px; display: grid; gap: 10px; font-size: 16px; }
+.trust li { display: flex; gap: 10px; align-items: flex-start; }
+.tick { flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--lilac); display: grid; place-items: center; margin-top: 2px; }
+.tick svg { width: 12px; height: 12px; stroke: var(--violet-deep); fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.hero-visual { position: relative; min-width: 0; padding-bottom: 124px; }
+.net { position: absolute; inset: -60px -80px auto auto; width: 320px; height: 240px; opacity: .9; pointer-events: none; }
+.browser { position: relative; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); }
+.browser-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: var(--lilac); font-size: 12px; color: var(--muted); }
+.browser-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--paper); flex: none; }
+.browser-bar span { margin-left: 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chat-float {
+  position: absolute; left: -28px; bottom: 0; width: 286px;
+  background: var(--chat-bg); color: var(--chat-text); border-radius: 18px; padding: 14px; box-shadow: var(--shadow);
+  display: grid; gap: 8px;
+}
+.chat-title { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--chat-key); }
+.chat-title::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--prix); }
+.b { max-width: 92%; padding: 9px 12px; border-radius: 14px; font-size: 13.5px; line-height: 1.45; }
+.b.me { margin-left: auto; background: var(--chat-me); border-bottom-right-radius: 4px; }
+.b.bot { background: var(--chat-bot); border-bottom-left-radius: 4px; }
+.b strong { color: var(--on-ink); }
+.b .k { color: var(--chat-key); font-weight: 700; font-variant-numeric: tabular-nums; }
+.b .lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: .08em; opacity: .75; margin-bottom: 4px; }
+
+/* Trois questions */
+.questions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.q { border-top: 4px solid var(--line); padding-top: 20px; display: grid; gap: 8px; align-content: start; }
+.q.pilot { border-top-color: var(--pilot); }
+.q.devis { border-top-color: var(--devis); }
+.q.prix { border-top-color: var(--prix); }
+.q .wm { font-size: 24px; }
+.q .role { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.q blockquote { font-family: var(--display); font-size: 21px; line-height: 1.25; font-weight: 600; }
+
+/* Profils */
+.profiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); }
+.profile { padding: 28px 28px 8px 0; display: grid; gap: 10px; align-content: start; }
+.profile + .profile { border-left: 1px solid var(--line); padding-left: 28px; }
+.profile p { color: var(--muted); }
+
+/* Le Club */
+.pillars { display: grid; gap: 0; }
+.pillar { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 40px; padding-block: 32px; border-top: 1px solid var(--line); }
+.pillar:last-child { border-bottom: 1px solid var(--line); }
+.pillar h3 { font-size: 28px; }
+.pillar .say { color: var(--muted); margin-top: 8px; }
+.items { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; align-content: start; }
+.items li { display: flex; gap: 10px; align-items: flex-start; }
+.items small { display: block; color: var(--muted); font-size: 15px; }
+
+/* Outils en images */
+.tool { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 56px; align-items: center; padding-block: 36px; }
+.tool.flip .tool-text { order: 2; }
+.tool-text { display: grid; gap: 14px; align-content: start; }
+.tool-text .wm { font-size: 34px; line-height: 1; }
+.tool-text .role { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.tool-text blockquote { font-family: var(--display); font-size: 24px; line-height: 1.2; font-weight: 600; }
+.tool-text p { color: var(--muted); }
+.tool-text ul { list-style: none; padding: 0; display: grid; gap: 8px; }
+.tool-text li { display: flex; gap: 10px; align-items: flex-start; }
+.shot { border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); background: var(--paper); }
+.shot img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
+.shot img.natural { aspect-ratio: auto; }
+.shot figcaption, .phone-cap { font-size: 13px; color: var(--muted); padding: 10px 14px; border-top: 1px solid var(--line); background: var(--paper); }
+.phone-wrap { display: grid; justify-items: center; gap: 12px; }
+.phone { width: min(320px, 100%); border: 9px solid var(--ink); border-radius: 36px; background: var(--chat-bg); color: var(--chat-text); padding: 22px 12px 18px; display: grid; gap: 8px; box-shadow: var(--shadow); }
+.phone-cap { border: 0; background: none; padding: 0; text-align: center; }
+
+/* Étapes */
+.steps { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; counter-reset: step; }
+.steps li { counter-increment: step; display: grid; gap: 8px; align-content: start; position: relative; padding-top: 58px; }
+.steps li::before {
+  content: counter(step); position: absolute; top: 0; left: 0; width: 42px; height: 42px; border-radius: 50%;
+  background: var(--violet); color: var(--on-ink); font: 700 18px/42px var(--display); text-align: center;
+}
+.steps li::after { content: ''; position: absolute; top: 20px; left: 54px; right: -16px; height: 2px; background: var(--violet); opacity: .25; }
+.steps li:last-child::after { display: none; }
+.steps p { color: var(--muted); font-size: 16px; }
+
+/* Témoignages */
+.voices { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.voice { display: grid; gap: 18px; }
+.voice-main { background: var(--mist); border-radius: 22px; padding: 40px; }
+.voice-main blockquote { font-family: var(--display); font-size: clamp(22px, 2.6vw, 30px); line-height: 1.25; font-weight: 600; }
+.voice-side { border: 1px solid var(--line); border-radius: 22px; padding: 32px; }
+.voice-side blockquote { font-family: var(--display); font-size: 20px; line-height: 1.3; font-weight: 600; }
+.who { display: flex; align-items: center; gap: 12px; }
+.avatar { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--violet); color: var(--on-ink); display: grid; place-items: center; font: 700 18px/1 var(--display); }
+.who-text b { display: block; font-size: 16px; color: var(--ink); }
+.who-text small { display: block; font-size: 14px; color: var(--muted); }
+details.more summary { cursor: pointer; font-weight: 700; color: var(--violet-deep); list-style: none; }
+details.more summary::-webkit-details-marker { display: none; }
+details.more summary::after { content: ' +'; }
+details.more[open] summary::after { content: ' \2212'; }
+details.more p { margin-top: 12px; color: var(--muted); font-size: 16px; }
+
+/* Analyse par activité */
+.analytic { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
+.analytic-text { display: grid; gap: 18px; align-content: start; }
+.analytic-text p { font-size: 19px; }
+.analytic-text ul { list-style: none; padding: 0; display: grid; gap: 10px; }
+.analytic-text li { display: flex; gap: 10px; align-items: flex-start; }
+.activity { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
+.activity-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; align-items: baseline; padding: 16px 22px; border-bottom: 1px solid var(--line); }
+.activity-head b { font-family: var(--display); font-size: 18px; }
+.activity-head span { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.act-row { display: grid; grid-template-columns: minmax(0, 1fr) repeat(3, minmax(0, 1fr)); gap: 12px; align-items: end; padding: 14px 22px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.act-row b { font-size: 17px; display: flex; align-items: center; gap: 8px; }
+.act-row span { display: grid; gap: 2px; font-weight: 700; white-space: nowrap; }
+.act-row small { font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.act-row.sum { background: var(--mist); }
+.dot { flex: none; width: 10px; height: 10px; border-radius: 50%; }
+.dot.c1 { background: var(--devis); }
+.dot.c2 { background: var(--pilot); }
+.dot.c3 { background: var(--violet); }
+.gain { color: var(--prix-ink); }
+.loss { color: var(--loss); }
+.activity-note { padding: 16px 22px; background: var(--lilac); font-size: 16px; }
+
+/* Temps gagné */
+.gains { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 56px; align-items: start; }
+.gain-list { list-style: none; padding: 0; display: grid; border-top: 1px solid var(--line); }
+.gain-list li { padding-block: 22px; border-bottom: 1px solid var(--line); display: grid; gap: 6px; }
+.gain-list p { color: var(--muted); }
+
+/* Club ou franchise */
+.versus { border: 1px solid var(--line); border-radius: 18px; background: var(--paper); overflow: hidden; }
+.vs-row { display: grid; grid-template-columns: minmax(0, 190px) minmax(0, 1fr) minmax(0, 1fr); }
+.vs-row + .vs-row { border-top: 1px solid var(--line); }
+.vs-row > * { padding: 16px 20px; }
+.vs-crit { font-family: var(--display); font-weight: 650; font-size: 17px; }
+.vs-them { color: var(--muted); }
+.vs-us { background: var(--lilac); font-weight: 500; }
+.vs-head > * { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.vs-head .vs-us { color: var(--violet-deep); }
+.vs-label { display: none; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 4px; }
+.vs-source { font-size: 14px; color: var(--muted); margin-top: 12px; }
+.sub-h { font-size: 26px; margin-block: 52px 8px; }
+.sub-p { color: var(--muted); margin-bottom: 24px; }
+
+/* Tarifs */
+.prices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.price { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 28px; display: grid; gap: 14px; align-content: start; }
+.price.club { border: 2px solid var(--violet); }
+.price h3 { font-size: 20px; }
+.amount { font-family: var(--display); font-weight: 750; font-size: 40px; line-height: 1; font-variant-numeric: tabular-nums; }
+.amount small { display: block; font-family: var(--body); font-weight: 500; font-size: 15px; color: var(--muted); margin-top: 8px; line-height: 1.4; }
+.price ul { list-style: none; padding: 0; display: grid; gap: 8px; font-size: 16px; }
+.price li { display: flex; gap: 10px; align-items: flex-start; }
+.tag { justify-self: start; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 10px; border-radius: 99px; background: var(--lilac); color: var(--violet-deep); }
+.note { font-size: 15px; color: var(--muted); }
+.sim { margin-top: 32px; background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 32px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; }
+.sim-controls { display: grid; gap: 18px; }
+.sim label { font-weight: 500; }
+.sim-count { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+.sim output { font-family: var(--display); font-weight: 750; font-size: 28px; line-height: 1; color: var(--violet-deep); font-variant-numeric: tabular-nums; }
+.sim input[type=range] { width: 100%; accent-color: var(--violet); height: 28px; }
+.sim .check { display: flex; gap: 10px; align-items: center; cursor: pointer; }
+.sim .check input { width: 20px; height: 20px; accent-color: var(--violet); }
+.sim-lines { display: grid; gap: 0; }
+.sim-lines > div { display: flex; justify-content: space-between; gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--line); align-items: baseline; }
+.sim-lines dt small { display: block; color: var(--muted); font-size: 14px; }
+.sim-lines dd { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sim-lines .total { border-bottom: 0; padding-top: 16px; }
+.sim-lines .total dt { font-weight: 700; }
+.sim-lines .total dd { font-family: var(--display); font-size: 34px; line-height: 1; color: var(--violet-deep); }
+.sim-per { color: var(--muted); font-size: 15px; }
+
+/* Réseau */
+.network { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.map svg { width: 100%; max-width: 460px; height: auto; display: block; margin-inline: auto; }
+.founders { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 26px; }
+.founder { display: grid; gap: 6px; justify-items: start; align-content: start; }
+.founder .photo-img { margin-bottom: 6px; }
+.founder b { font-size: 18px; }
+.founder .role { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--violet-deep); }
+.photo-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px; background: var(--mist); }
+.founder span { font-size: 15px; color: var(--muted); }
+
+/* FAQ */
+.faq { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 56px; align-items: start; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; padding-block: 20px; font-family: var(--display); font-size: 20px; font-weight: 600; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; flex: none; width: 32px; height: 32px; border-radius: 50%; background: var(--lilac); color: var(--violet-deep); display: grid; place-items: center; font: 700 20px/1 var(--body); }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list details p { color: var(--muted); padding-bottom: 22px; max-width: 44em; }
+
+/* Appel final */
+.cta-band { background: var(--ink); color: var(--on-ink); padding-block: 84px; }
+.cta-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+.cta-band h2 { font-size: clamp(32px, 4.4vw, 52px); }
+.cta-band p { color: var(--on-ink-soft); font-size: 19px; margin-top: 14px; max-width: 30em; }
+.cta-box { display: grid; gap: 16px; justify-items: start; }
+.cta-box .mail { color: var(--on-ink-soft); font-size: 16px; }
+.cta-box .mail b { color: var(--on-ink); user-select: all; }
+
+/* Pied de page */
+.footer { background: var(--ink); color: var(--on-ink-soft); border-top: 1px solid rgba(255, 255, 255, .12); padding-block: 40px; font-size: 15px; }
+.footer-grid { display: flex; flex-wrap: wrap; gap: 24px 48px; justify-content: space-between; align-items: flex-start; }
+.footer .logo { color: var(--on-ink); font-size: 22px; }
+.footer nav { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.footer a { text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.legal { margin-top: 24px; font-size: 14px; opacity: .8; }
+.legal-box { margin-top: 16px; font-size: 14px; scroll-margin-top: 84px; }
+.legal-box summary { cursor: pointer; font-weight: 700; color: var(--on-ink); }
+.legal-box p { margin-top: 10px; max-width: 62em; }
+.legal-box strong { color: var(--on-ink); }
+.todo { color: var(--gold); border-bottom: 1px dashed var(--gold); }
+
+/* Adaptation aux petits écrans */
+@media (max-width: 940px) {
+  .band { padding-block: 64px; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--paper); border-bottom: 1px solid var(--line); flex-direction: column; gap: 0; padding: 8px 20px 16px; margin: 0; }
+  .nav.open { display: flex; }
+  .nav a { padding-block: 14px; border-bottom: 1px solid var(--line); font-size: 18px; }
+  .bar .btn-sm { margin-left: auto; }
+  .burger { display: flex; }
+  .hero { padding-block: 48px 64px; }
+  .hero-grid, .tool, .voices, .network, .faq, .cta-grid, .sim, .analytic, .gains { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .vs-row { grid-template-columns: minmax(0, 1fr); }
+  .vs-head { display: none; }
+  .vs-label { display: block; }
+  .vs-row > * { padding: 12px 18px; }
+  .vs-crit { padding-bottom: 0; }
+  .tool.flip .tool-text { order: 0; }
+  .hero-visual { padding-bottom: 0; }
+  .chat-float { position: static; width: auto; margin-top: 16px; }
+  .net { display: none; }
+  .questions, .prices { grid-template-columns: minmax(0, 1fr); }
+  .profiles { grid-template-columns: minmax(0, 1fr); }
+  .profile, .profile + .profile { padding: 24px 0; border-left: 0; }
+  .profile + .profile { border-top: 1px solid var(--line); }
+  .pillar { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .steps li::after { display: none; }
+  .voice-main { padding: 28px; }
+}
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .items, .steps { grid-template-columns: minmax(0, 1fr); }
+  .act-row { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr); padding: 14px 16px; }
+  .act-row b { grid-column: 1 / -1; }
+  .act-row small { letter-spacing: .03em; font-size: 11px; }
+  .activity-head, .activity-note { padding-inline: 16px; }
+  .bar { gap: 12px; }
+  .logo { font-size: 23px; }
+  .sim { padding: 22px; }
+  .amount { font-size: 34px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
+</style>
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="#" class="logo">
-                    <span class="logo-text">nexo<em>Link</em></span>
-                </a>
-                <ul class="nav-menu">
-                    <li><a href="#approche">Approche</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#valeur">Valeur Ajoutée</a></li>
-                    <li><a href="#temoignages">Témoignages</a></li>
-                    <li><a href="#tarifs">Tarifs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <a href="#contact" class="nav-cta">Nous Contacter</a>
-                <button class="mobile-menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-            </nav>
+
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="nexoLink, retour en haut de page">nexo<em>Link</em></a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#club">Le Club</a>
+      <a href="#outils">Les outils</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#reseau">Le réseau</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#contact">Échanger 30&nbsp;min</a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>
+          <span class="kicker">Le club des consultants en contrôle de gestion et pilotage de TPE/PME</span>
+          Indépendant, mais <span class="mark">jamais seul.</span>
+        </h1>
+        <p class="lead">nexoLink réunit un club d'entraide, une méthode éprouvée sur le terrain et trois outils de pilotage prêts à déployer chez vos clients. Un club, pas une franchise : vous gardez votre nom, vos clients et vos honoraires.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Échanger 30 minutes avec nous</a>
+          <a class="link" href="#tarifs">Voir les tarifs</a>
         </div>
-    </header>
-
-    <main>
-    <!-- Hero Section -->
-    <section class="hero" id="accueil">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Aidez vos clients à transformer leurs données en leviers de croissance</h1>
-                    <p class="hero-slogan">La communauté au service du pilotage d'entreprise</p>
-                    <p class="hero-description">
-                        Rejoignez notre écosystème de consultants experts et découvrez comment accompagner efficacement vos clients TPE/PME dans la transformation de leurs chiffres en leviers de croissance. Un pilotage d'entreprise accessible, efficace et parfaitement adapté aux besoins de vos missions.
-                    </p>
-                    <a href="#contact" class="hero-cta">
-                        Découvrir nexoLink
-                        <span>→</span>
-                    </a>
-                </div>
-                <div class="hero-visual">
-                    <div class="hero-graphic">
-                        <img src="hero-illustration.webp" width="800" height="800" fetchpriority="high" alt="Consultation en pilotage d'entreprise - Équipe de consultants autour d'un tableau de bord" class="hero-illustration">
-                    </div>
-                </div>
-            </div>
+        <ul class="trust">
+          <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Tarifs publics, affichés sur cette page</li>
+          <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Adhésion à 1&nbsp;200&nbsp;€ HT par an, tout le Club compris</li>
+          <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Licences payées uniquement pour vos clients actifs</li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <svg class="net" viewBox="0 0 320 240" aria-hidden="true">
+          <g stroke="#7C3AED" stroke-width="1.5" opacity=".35" fill="none">
+            <path d="M40 60 L140 30 L250 80 L300 30 M140 30 L170 130 L250 80 M40 60 L170 130 L280 190"/>
+          </g>
+          <g fill="#7C3AED">
+            <circle cx="40" cy="60" r="6"/><circle cx="140" cy="30" r="8"/><circle cx="250" cy="80" r="6"/>
+            <circle cx="300" cy="30" r="5"/><circle cx="170" cy="130" r="7"/><circle cx="280" cy="190" r="5"/>
+          </g>
+        </svg>
+        <figure class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>Portail client nexoPilot, dossier de démonstration</span></div>
+          <img src="img/np-portail.jpg" width="1400" height="816" alt="Portail client nexoPilot : chiffre d'affaires réalisé, carnet de commande, résultat à date, résultat projeté et courbe du chiffre d'affaires cumulé">
+        </figure>
+        <div class="chat-float" aria-label="Exemple d'échange avec nexoPrix">
+          <span class="chat-title">nexoPrix, assistant de chiffrage</span>
+          <p class="b me">J'ai un devis à faire, j'ai deux gars pendant une semaine, plus j'ai 2000 euros de matos.</p>
+          <p class="b bot">Coût de revient : <strong>6&nbsp;750&nbsp;€</strong><br>Prix cible : <span class="k">7&nbsp;941&nbsp;€</span></p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Approach Section -->
-    <section class="approach" id="approche">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Notre approche 3M</h2>
-                <p class="section-subtitle">
-                    Une méthodologie éprouvée qui réinvente le pilotage d'entreprise pour le rendre accessible, efficace et parfaitement adapté à vos besoins spécifiques.
-                </p>
-            </div>
-            <div class="approach-grid">
-                <div class="approach-card">
-                    <div class="approach-icon">M</div>
-                    <h3>Modulable</h3>
-                    <p>Adaptez votre niveau d'accompagnement selon vos besoins. Mixez autonomie et support sans contraintes, avec la flexibilité totale de faire évoluer votre formule.</p>
-                </div>
-                <div class="approach-card">
-                    <div class="approach-icon">M</div>
-                    <h3>Mesurable</h3>
-                    <p>Suivez vos performances avec des outils intuitifs et visuels. Des indicateurs clairs et des tableaux de bord personnalisés pour piloter efficacement.</p>
-                </div>
-                <div class="approach-card">
-                    <div class="approach-icon">M</div>
-                    <h3>Méthodique</h3>
-                    <p>Bénéficiez d'une approche structurée et éprouvée. Une méthodologie claire avec un langage accessible pour optimiser votre pilotage d'entreprise.</p>
-                </div>
-            </div>
+  <section class="band" aria-labelledby="t-questions">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Ce que vous apportez à vos clients</span>
+        <h2 id="t-questions">Trois outils pour répondre aux vraies questions d'un dirigeant</h2>
+      </div>
+      <div class="questions">
+        <div class="q pilot">
+          <span class="wm">nexo<em class="p">Pilot</em></span>
+          <span class="role">Piloter l'entreprise</span>
+          <blockquote>«&nbsp;Où en suis-je, et où vais-je arriver en fin d'année&nbsp;?&nbsp;»</blockquote>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nos services dédiés aux consultants</h2>
-                <p class="section-subtitle">
-                    Un écosystème complet pour accompagner votre croissance et celle de vos clients avec des outils et une communauté d'experts à votre service.
-                </p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-number">1</div>
-                    <h3>Réseau dynamique de consultants experts</h3>
-                    <p>Rejoignez une communauté active de professionnels du pilotage d'entreprise. Échangez, partagez vos expériences et développez votre réseau avec des experts de votre domaine.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">2</div>
-                    <h3>Programme pour booster la performance</h3>
-                    <p>Accédez à un programme structuré d'accompagnement pour développer vos compétences et optimiser votre efficacité. Des modules pratiques adaptés à votre niveau d'expertise.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">3</div>
-                    <h3>Accompagnement stratégique sur mesure</h3>
-                    <p>Bénéficiez d'un soutien personnalisé pour vos missions auprès des TPE/PME. Des solutions adaptées aux défis spécifiques de chaque entreprise cliente.</p>
-                </div>
-            </div>
+        <div class="q devis">
+          <span class="wm">nexo<em class="d">Devis</em></span>
+          <span class="role">Piloter l'activité commerciale</span>
+          <blockquote>«&nbsp;Quelles affaires me font vraiment gagner de l'argent&nbsp;?&nbsp;»</blockquote>
         </div>
-    </section>
-
-    <!-- Value Proposition Section -->
-    <section class="value-proposition" id="valeur">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Bien plus qu'un simple outil</h2>
-                <p class="section-subtitle">
-                    Découvrez tous les avantages de rejoindre la communauté nexoLink pour transformer votre pratique professionnelle.
-                </p>
-            </div>
-            <div class="value-grid">
-                <div class="value-item">
-                    <div class="value-icon">📹</div>
-                    <h4>Visios communautaires</h4>
-                    <p>Participez à nos échanges réguliers avec tous les membres : actualités, cas d'écoles, vie du réseau, etc... Partagez vos expériences, posez vos questions et enrichissez votre réseau professionnel.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">📰</div>
-                    <h4>Revue de presse hebdomadaire</h4>
-                    <p>Restez informé des dernières actualités du secteur avec notre revue de presse spécialisée, analysée et commentée par nos experts.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">💬</div>
-                    <h4>Forum et espace de discussions</h4>
-                    <p>Accédez à notre plateforme d'échanges dédiée pour poser vos questions, partager vos bonnes pratiques et collaborer avec la communauté.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">🤝</div>
-                    <h4>Fini l'isolement professionnel</h4>
-                    <p>Vous n'êtes plus seul face aux défis du conseil. Bénéficiez du soutien et de l'expérience collective de nos consultants experts.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">⚡</div>
-                    <h4>Bonnes pratiques partagées</h4>
-                    <p>Techniques métier, approches de prospection, discours client... Capitaliser sur l'expérience collective pour améliorer vos performances.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">🎯</div>
-                    <h4>Conseil collaboratif</h4>
-                    <p>Discutez ensemble des meilleures approches pour vos nouveaux clients avec leurs spécificités. L'intelligence collective au service de vos missions.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">⏱️</div>
-                    <h4>Gain de temps optimal</h4>
-                    <p>Notre outil vous fait gagner un temps précieux sur le back office et la préparation de vos rendez-vous client. Plus d'efficacité, moins d'administratif.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">📊</div>
-                    <h4>Livrables automatisés</h4>
-                    <p>Générez automatiquement des livrables professionnels pour vos clients. Tableaux de bord, analyses et recommandations créés en quelques clics.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">🛠️</div>
-                    <h4>Outils de pilotage innovants</h4>
-                    <p>Bénéficiez de nos solutions technologiques avancées : dashboards interactifs, automatisation des processus et outils d'aide à la décision développés spécifiquement pour le conseil.</p>
-                </div>
-            </div>
+        <div class="q prix">
+          <span class="wm">nexo<em class="x">Prix</em></span>
+          <span class="role">Chiffrer sur le terrain</span>
+          <blockquote>«&nbsp;Cette affaire, je la prends à quel prix&nbsp;?&nbsp;»</blockquote>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="temoignages">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Ce que disent nos membres</h2>
-                <p class="section-subtitle">
-                    Découvrez les témoignages de consultants qui ont rejoint la communauté nexoLink.
-                </p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p class="testimonial-long">Après plusieurs années d'expérience dans le pilotage et l'accompagnement de dirigeants, j'ai connu différentes approches et différents outils. Ce qui me paraît particulièrement intéressant et différenciant avec nexoLink, c'est d'avoir su créer une véritable dynamique autour du métier.<br><br>Les outils proposés constituent une réelle valeur ajoutée. Ils permettent d'obtenir une lecture fine et pertinente de l'activité et de ses performances, tout en restant simples à comprendre et accessibles par tous. La restitution formalisée des suivis est claire et structurante, elle permet au chef d'entreprise de disposer d'informations concrètes et utiles pour mieux comprendre son activité, suivre ses résultats, faciliter sa prise de décision ainsi que le suivi des actions et de son historique.<br><br>nexoLink, c'est également une communauté et un accompagnement. Pouvoir échanger avec d'autres professionnels confrontés aux mêmes problématiques, partager les expériences et bénéficier des partages de chacun est une véritable richesse. C'est cette combinaison entre des outils performants, une méthodologie, un accompagnement et une véritable communauté de professionnels qui fait, à mes yeux, toute la pertinence de nexoLink.</p>
-                        <button type="button" class="testimonial-toggle" aria-expanded="false">Lire la suite</button>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h5>Alain</h5>
-                            <span>Consultant indépendant, membre du Club nexoLink</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p class="testimonial-long">Mon expérience avec nexoLink a été une étape enrichissante dans mon parcours professionnel. J'ai particulièrement apprécié la mise à disposition d'outils performants, concrets et adaptés aux besoins de l'accompagnement des dirigeants. Ils constituent un véritable support pour analyser l'activité, mieux comprendre les enjeux économiques et apporter des réponses adaptées aux chefs d'entreprise.<br><br>Mais au-delà des outils, c'est surtout la disponibilité et l'écoute de l'équipe que je retiens. Toujours attentive aux retours du terrain, elle est dans une véritable démarche d'amélioration continue, avec la volonté de faire évoluer les outils et de répondre au mieux aux besoins des consultants.<br><br>Même si j'ai aujourd'hui pris une autre orientation professionnelle, je garde un très bon souvenir de cette collaboration et tiens à souligner la qualité de l'accompagnement et l'investissement de toute l'équipe.</p>
-                        <button type="button" class="testimonial-toggle" aria-expanded="false">Lire la suite</button>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h5>Estelle</h5>
-                            <span>Ancienne consultante du Club nexoLink</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>Intégrer le Club nexoLink m'a offert un soutien précieux et des idées concrètes pour mener à bien mes missions. L'entraide au sein de la communauté est permanente, les bonnes pratiques sont partagées sans retenue, et l'ambiance conviviale garantit une disponibilité réelle de chacun.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h5>Clémence</h5>
-                            <span>Contrôleur de gestion indépendant, Nouvelle Aquitaine</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="band band-mist" id="difference" aria-labelledby="t-diff">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Ce qui fait la différence</span>
+        <h2 id="t-diff">Chaque activité de votre client a ses propres chiffres</h2>
+        <p>Un charpentier-couvreur ne gagne pas sa vie de la même façon sur la charpente et sur la couverture. Un menuisier qui travaille le bois, le métal et le PVC non plus.</p>
+      </div>
+      <div class="analytic">
+        <div class="analytic-text">
+          <p>Avec nexoPilot, vous donnez à votre client un coût de revient, des objectifs et un résultat pour <strong>chacune de ses activités</strong>. Il voit enfin laquelle le fait vivre, et laquelle lui coûte.</p>
+          <ul>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Un coût de revient horaire par activité</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Des objectifs de chiffre d'affaires distincts</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Un résultat par activité, en plus de la vue d'ensemble</li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Differentiation Section -->
-    <section class="differentiation">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Pourquoi choisir nexoLink ?</h2>
-                <p class="section-subtitle">
-                    Notre différence réside dans notre approche flexible et accessible du pilotage d'entreprise.
-                </p>
-            </div>
-            <div class="diff-grid">
-                <div class="diff-item">
-                    <h4>Liberté totale</h4>
-                    <p>Pas de formule imposée. Mixez autonomie et support selon vos besoins réels. Vous gardez le contrôle de votre parcours d'accompagnement.</p>
-                </div>
-                <div class="diff-item">
-                    <h4>Sans engagement contraignant</h4>
-                    <p>Testez nos services sans pression ni engagement à long terme. Découvrez notre approche à votre rythme et décidez en toute sérénité.</p>
-                </div>
-                <div class="diff-item">
-                    <h4>Outils intuitifs et accessibles</h4>
-                    <p>Bénéficiez d'outils visuels avec un langage clair et accessible. Fini la complexité inutile, place à l'efficacité et à la simplicité d'usage.</p>
-                </div>
-            </div>
+        <div class="activity" role="group" aria-label="Exemple illustratif : une menuiserie analysée par activité">
+          <div class="activity-head"><b>Menuiserie, trois activités</b><span>Exemple illustratif</span></div>
+          <div class="act-row"><b><i class="dot c1"></i>Bois</b><span><small>Coût de revient</small>52&nbsp;€/h</span><span><small>Objectif</small>310&nbsp;000&nbsp;€</span><span class="gain"><small>Résultat</small>+21&nbsp;400&nbsp;€</span></div>
+          <div class="act-row"><b><i class="dot c2"></i>Métal</b><span><small>Coût de revient</small>61&nbsp;€/h</span><span><small>Objectif</small>180&nbsp;000&nbsp;€</span><span class="gain"><small>Résultat</small>+4&nbsp;200&nbsp;€</span></div>
+          <div class="act-row"><b><i class="dot c3"></i>PVC</b><span><small>Coût de revient</small>47&nbsp;€/h</span><span><small>Objectif</small>240&nbsp;000&nbsp;€</span><span class="loss"><small>Résultat</small>&minus;6&nbsp;800&nbsp;€</span></div>
+          <div class="act-row sum"><b>Entreprise</b><span></span><span><small>Objectif</small>730&nbsp;000&nbsp;€</span><span class="gain"><small>Résultat</small>+18&nbsp;800&nbsp;€</span></div>
+          <p class="activity-note">Vue d'ensemble, l'entreprise gagne de l'argent. Vue par activité, le PVC en perd : c'est là que votre conseil commence.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing" id="tarifs">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nos offres tarifaires</h2>
-                <p class="section-subtitle">
-                    Une adhésion annuelle unique et des licences outils facturées par client suivi.
-                </p>
-            </div>
+  <section class="band" aria-labelledby="t-temps">
+    <div class="wrap gains">
+      <div>
+        <span class="eyebrow">Du temps pour l'essentiel</span>
+        <h2 id="t-temps">Votre temps va à l'analyse, pas à la mise en forme</h2>
+        <p class="lead" style="margin-top:16px">Les heures passées à monter des tableaux et à préparer des supports, vous les récupérez pour conseiller vos clients et pour en trouver de nouveaux.</p>
+      </div>
+      <ul class="gain-list">
+        <li><h3>Des livrables propres, sans retouche</h3><p>Tableaux de bord, analyses et restitutions sortent directement des outils, prêts à être présentés.</p></li>
+        <li><h3>Un portail pour chaque client</h3><p>Le dirigeant retrouve ses chiffres et vos recommandations avec un simple lien, sans identifiant ni mot de passe.</p></li>
+        <li><h3>Des rendez-vous vite préparés</h3><p>Le réalisé face aux objectifs est déjà calculé. Vous arrivez avec l'analyse, pas avec un tableur à finir.</p></li>
+      </ul>
+    </div>
+  </section>
 
-            <!-- Adhésion -->
-            <h3 style="text-align: center; font-size: 26px; margin-bottom: 30px; color: var(--text-dark);">Adhésion</h3>
-            <div class="pricing-grid" style="grid-template-columns: minmax(320px, 460px); justify-content: center; margin-bottom: 60px;">
-                <div class="pricing-card featured" style="display: flex; flex-direction: column; text-align: center;">
-                    <h4 style="margin-top: 0; margin-bottom: 0;">Adhésion nexoLink</h4>
-                    <div class="price" style="margin-top: 10px; margin-bottom: 5px;">1 200€ HT/an</div>
-                    <p style="margin: 0 0 20px 0; font-size: 13px; color: var(--text-gray);">(ou 110€ HT par mois)</p>
-                    <p style="line-height: 2; text-align: center; margin: 0;">
-                        ✓ Accès à la communauté & Forums<br>
-                        ✓ Formations aux outils<br>
-                        ✓ Revue de presse<br>
-                        ✓ Fiches métier<br>
-                        ✓ Visios communautaires<br>
-                        ✓ Accès au coaching personnalisé
-                    </p>
-                </div>
-            </div>
-
-            <!-- Licences outils -->
-            <h3 style="text-align: center; font-size: 26px; margin-bottom: 30px; color: var(--text-dark);">Licences outils</h3>
-            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 860px; margin: 0 auto 30px; align-items: stretch;">
-                <div class="pricing-card" style="display: flex; flex-direction: column; text-align: center;">
-                    <h4 style="margin-top: 0; margin-bottom: 0;">Pack nexo<em class="em-pilot">Pilot</em> + nexo<em class="em-devis">Devis</em></h4>
-                    <div class="price" style="margin-top: 10px; margin-bottom: 5px;">40€ HT/mois/client</div>
-                    <p style="margin: 0 0 20px 0; font-size: 13px; color: var(--text-gray); font-style: italic;">Les deux outils sont indissociables</p>
-                    <p style="line-height: 2; text-align: center; margin: 0 0 20px 0;">
-                        ✓ nexoPilot : pilotage de gestion<br>
-                        ✓ nexoDevis : outil d'analyse commerciale
-                    </p>
-                    <p style="font-size: 13px; color: var(--text-gray); font-style: italic; margin: auto 0 0 0;">Capé à 13 licences, soit 520€ HT/mois maximum</p>
-                </div>
-
-                <div class="pricing-card" style="display: flex; flex-direction: column; text-align: center;">
-                    <h4 style="margin-top: 0; margin-bottom: 0;">nexo<em class="em-prix">Prix</em></h4>
-                    <div class="price" style="margin-top: 10px; margin-bottom: 5px;">20€ HT/mois/client</div>
-                    <p style="margin: 0 0 20px 0; font-size: 13px; color: var(--text-gray); font-style: italic;">Agent d'analyse de chiffrage</p>
-                    <p style="line-height: 2; text-align: center; margin: 0;">
-                        ✓ Nouvel outil phare pour les dirigeants de TPE<br>
-                        ✓ Agent conversationnel sur mobile<br>
-                        ✓ Prix cible, simulations de chiffrage<br>
-                        ✓ Rentabilité prévisionnelle et finale
-                    </p>
-                </div>
-            </div>
-
-            <!-- Options complémentaires -->
-            <h3 style="text-align: center; font-size: 26px; margin-bottom: 30px; color: var(--text-dark);">Options complémentaires</h3>
-            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); align-items: stretch;">
-                <div class="pricing-card" style="background: linear-gradient(135deg, rgba(106, 13, 173, 0.03) 0%, rgba(255, 255, 255, 1) 100%); border: 2px solid var(--light-purple); display: flex; flex-direction: column; justify-content: center; text-align: center;">
-                    <div><span style="background: var(--text-gray); color: white; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 15px;">En cours de construction</span></div>
-                    <h4 style="margin-bottom: 0;">Pack Formation</h4>
-                </div>
-
-                <div class="pricing-card" style="background: linear-gradient(135deg, rgba(106, 13, 173, 0.03) 0%, rgba(255, 255, 255, 1) 100%); border: 2px solid var(--light-purple); display: flex; flex-direction: column; text-align: center;">
-                    <div style="height: 43px;"></div>
-                    <h4 style="min-height: 60px; display: flex; align-items: center; justify-content: center;">Coaching personnalisé</h4>
-                    <div class="price">À partir de 160€ HT</div>
-                    <p style="margin-bottom: 15px; font-size: 13px; color: var(--text-gray);">Accompagnement sur mesure</p>
-                    <div style="text-align: center; margin-top: auto; flex-grow: 1;">
-                        <p style="line-height: 2; text-align: center;">
-                            ✓ 1 session (2h) : <strong>160€ HT</strong><br>
-                            ✓ 5 sessions (10h) : <strong>720€ HT</strong><br>
-                            ✓ 10 sessions (20h) : <strong>1 280€ HT</strong>
-                        </p>
-                    </div>
-                </div>
-            </div>
+  <section class="band band-mist" aria-labelledby="t-profils">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Pour qui</span>
+        <h2 id="t-profils">Vous vous reconnaissez&nbsp;?</h2>
+      </div>
+      <div class="profiles">
+        <div class="profile">
+          <h3>Vous lancez votre activité de conseil</h3>
+          <p>Ancien contrôleur de gestion, DAF ou cadre financier, vous voulez accompagner des dirigeants sans repartir de zéro sur la méthode et les outils.</p>
         </div>
-    </section>
-    <!-- Réseau Section -->
-    <section class="network" id="reseau">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Les consultants du réseau nexoLink</h2>
-                <p class="section-subtitle">
-                    Un réseau d'experts présents partout en France, au plus près des TPE/PME.
-                </p>
-            </div>
-            <div style="max-width: 520px; margin: 0 auto;">
-                <!-- CARTE-CONSULTANTS:DEBUT -->
-                <svg viewBox="0 0 480 472" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte de France des consultants nexoLink" style="width: 100%; height: auto; display: block;">
-                    <path d="M 261.5,23.0 L 243.6,26.9 L 235.1,37.8 L 233.7,54.1 L 233.4,63.9 L 217.4,77.3 L 187.6,88.1 L 184.5,99.0 L 188.6,102.5 L 165.5,106.4 L 137.7,103.4 L 125.8,91.1 L 115.0,87.6 L 127.9,120.7 L 129.6,141.0 L 111.9,140.5 L 102.1,139.0 L 77.3,134.1 L 45.8,137.0 L 26.4,152.8 L 20.0,171.1 L 38.3,182.4 L 66.5,186.4 L 75.0,198.2 L 101.1,208.6 L 107.9,222.9 L 120.4,246.6 L 141.8,263.4 L 145.9,290.1 L 144.8,292.5 L 140.1,320.7 L 141.4,337.5 L 138.4,350.3 L 131.6,387.3 L 120.1,401.2 L 136.7,417.0 L 170.6,429.3 L 202.9,434.3 L 228.3,439.2 L 248.7,451.5 L 279.2,445.6 L 288.3,447.6 L 283.9,431.8 L 284.3,412.0 L 306.3,399.7 L 320.9,393.3 L 331.1,397.2 L 348.4,398.2 L 362.6,404.6 L 370.8,409.1 L 382.0,414.5 L 388.8,415.5 L 406.1,406.1 L 419.0,392.3 L 427.4,384.9 L 435.6,380.4 L 440.7,361.7 L 420.6,357.7 L 416.6,338.0 L 420.0,315.8 L 421.7,298.5 L 414.9,278.7 L 391.1,261.4 L 386.4,250.6 L 399.6,232.8 L 418.3,204.7 L 438.3,194.3 L 437.9,167.6 L 445.4,142.9 L 460.0,124.7 L 450.5,121.7 L 420.0,117.8 L 404.7,108.4 L 391.1,101.0 L 381.0,98.5 L 366.4,98.5 L 350.4,83.7 L 345.3,68.9 L 323.3,73.8 L 315.8,59.0 L 289.4,39.3 L 279.2,36.8 L 267.3,20.0 Z" fill="rgba(106, 13, 173, 0.05)" stroke="var(--light-purple)" stroke-width="2" stroke-linejoin="round"/>
-                    <circle cx="163.3" cy="334.8" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="192.3" cy="242.7" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="187.9" cy="243.6" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="385.4" cy="318.0" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="232.5" cy="387.6" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="340.6" cy="140.0" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="239.1" cy="399.7" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="275.7" cy="141.4" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="247.1" cy="403.7" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                    <circle cx="159.8" cy="325.6" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
-                </svg>
-                <!-- CARTE-CONSULTANTS:FIN -->
-            </div>
+        <div class="profile">
+          <h3>Vous êtes déjà consultant</h3>
+          <p>Vous avez vos clients et vos tableurs. Vous cherchez des livrables plus lisibles pour le dirigeant et du temps gagné sur la préparation de vos rendez-vous.</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2 class="section-title">Prêt à transformer votre approche du pilotage ?</h2>
-                <p class="section-subtitle">
-                    Rejoignez la communauté nexoLink et découvrez comment révolutionner votre pratique du conseil en pilotage d'entreprise. Nos experts sont là pour vous accompagner dans cette transformation.
-                </p>
-                <a href="mailto:info@nexolink.fr" class="contact-cta">
-                    Contactez-nous maintenant
-                    <span>✉</span>
-                </a>
-                <br>
-                <a href="mailto:info@nexolink.fr" class="contact-email">info@nexolink.fr</a>
-            </div>
+        <div class="profile">
+          <h3>Vous hésitez avec une franchise</h3>
+          <p>Vous voulez l'appui d'un collectif et d'une méthode, en gardant votre nom, vos clients et un budget de départ raisonnable.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 nexoLink. Tous droits réservés. | La communauté au service du pilotage d'entreprise</p>
+  <section class="band" id="club" aria-labelledby="t-club">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Le Club nexoLink</span>
+        <h2 id="t-club">Ce que vous trouvez en rejoignant le Club</h2>
+        <p>Trois choses, et aucune ne va sans les deux autres.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div>
+            <h3>L'entraide</h3>
+            <p class="say">Vous n'êtes plus seul face à un dossier difficile ou à un prospect qui hésite.</p>
+          </div>
+          <ul class="items">
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Visios communautaires<small>Actualités, cas d'école, vie du réseau</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Forum et espace de discussions<small>Une question, une réponse d'un confrère</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Revue de presse hebdomadaire<small>L'actualité du secteur, déjà triée</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Fiches métier<small>Les repères clés par secteur d'activité</small></span></li>
+          </ul>
         </div>
-    </footer>
+        <div class="pillar">
+          <div>
+            <h3>La méthode</h3>
+            <p class="say">Une façon de faire éprouvée chez nos propres clients, que vous adaptez à chaque dirigeant.</p>
+          </div>
+          <ul class="items">
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Formations aux outils<small>Comprises dans l'adhésion</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Bonnes pratiques partagées<small>Prospection, discours client, techniques métier</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Conseil collaboratif<small>Le regard du collectif sur vos nouveaux dossiers</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Coaching personnalisé<small>En option, à partir de 160&nbsp;€ HT la session</small></span></li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <div>
+            <h3>Les outils</h3>
+            <p class="say">Du pilotage annuel au chiffrage d'une affaire, pour tous les métiers de vos clients.</p>
+          </div>
+          <ul class="items">
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>nexoPilot, nexoDevis, nexoPrix<small>Trois outils qui se complètent</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Analyse par activité<small>Coût de revient, objectifs et résultat distincts</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Simulations avant décision<small>Recruter, investir, changer de prix</small></span></li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span>Livrables et portail client<small>Des restitutions propres, sans retouche</small></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+  <section class="band band-mist" id="outils" aria-labelledby="t-outils">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Les outils en images</span>
+        <h2 id="t-outils">Ce que voit votre client, pas une promesse</h2>
+        <p>Des écrans réels, tirés de notre dossier de démonstration.</p>
+      </div>
 
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = 'none';
-            }
-        });
+      <article class="tool">
+        <div class="tool-text">
+          <span class="wm">nexo<em class="p">Pilot</em></span>
+          <span class="role">Piloter l'entreprise</span>
+          <blockquote>«&nbsp;Où en suis-je, et où vais-je arriver en fin d'année&nbsp;?&nbsp;»</blockquote>
+          <p>Feuille de route annuelle, suivi régulier, résultat projeté et simulation des décisions. Le dirigeant ne découvre plus son résultat six mois après la clôture.</p>
+          <ul>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Seuil de rentabilité et coût de revient horaire, par activité</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Un portail client à jour chaque mois, avec le résultat projeté</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Simuler un recrutement ou un investissement avant de décider</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img class="natural" src="img/np-suivi.jpg" width="1400" height="978" loading="lazy" alt="Portail client nexoPilot : chiffre d'affaires mensuel face à la plage de rentabilité, dépenses et couverture des charges fixes">
+          <figcaption>Portail client, suivi mensuel, dossier de démonstration</figcaption>
+        </figure>
+      </article>
 
-        // Animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+      <article class="tool flip">
+        <div class="tool-text">
+          <span class="wm">nexo<em class="d">Devis</em></span>
+          <span class="role">Piloter l'activité commerciale</span>
+          <blockquote>«&nbsp;Quelles affaires me font vraiment gagner de l'argent&nbsp;?&nbsp;»</blockquote>
+          <p>La rentabilité de chaque devis avant signature, des simulations face au marché et le bilan réel une fois l'affaire terminée.</p>
+          <ul>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Analyse des coûts, affaire par affaire</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Taux de transformation et carnet de commandes</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Tableau de bord commercial complet</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="img/nd-dashboard.jpg" width="1400" height="1012" loading="lazy" alt="nexoDevis : tableau de bord commercial avec nombre de devis, taux de transformation, chiffre d'affaires signé et profit moyen">
+          <figcaption>Tableau de bord commercial, dossier de démonstration</figcaption>
+        </figure>
+      </article>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                }
-            });
-        }, observerOptions);
+      <article class="tool">
+        <div class="tool-text">
+          <span class="wm">nexo<em class="x">Prix</em></span>
+          <span class="role">Chiffrer sur le terrain</span>
+          <blockquote>«&nbsp;Cette affaire, je la prends à quel prix&nbsp;?&nbsp;»</blockquote>
+          <p>Sur son téléphone, le dirigeant écrit ou dicte sa question. Il obtient son coût de revient et son prix cible en quelques secondes.</p>
+          <ul>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Prix cible et simulations de chiffrage</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Rentabilité prévisionnelle, puis bilan de fin d'affaire</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>À l'écrit ou à la voix, sans logiciel à installer</li>
+          </ul>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone" role="img" aria-label="Exemple de conversation avec nexoPrix : le dirigeant décrit son chantier, l'assistant calcule le coût de revient, le prix cible et la rentabilité du prix proposé">
+            <p class="b me">J'ai un devis à faire, j'ai deux gars pendant une semaine, plus j'ai 2000 euros de matos.</p>
+            <p class="b bot"><span class="lbl">SIMULATION FINANCIÈRE</span>Coût de production : <strong>4&nbsp;550&nbsp;€</strong><br>Coût de revient : <strong>6&nbsp;750&nbsp;€</strong><br>Prix cible : <span class="k">7&nbsp;941&nbsp;€</span></p>
+            <p class="b bot">Quel prix de vente proposes-tu&nbsp;?</p>
+            <p class="b me">7000</p>
+            <p class="b bot"><span class="lbl">ANALYSE RENTABILITÉ</span>Prix proposé : <strong>7&nbsp;000&nbsp;€</strong><br>Profit : <span class="k">250&nbsp;€ (3,57&nbsp;%)</span><br><strong>Affaire utile et rentable</strong></p>
+          </div>
+          <p class="phone-cap">Échange réel avec l'assistant, dossier de démonstration</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-        // Observe all cards and sections
-        document.querySelectorAll('.approach-card, .service-card, .value-item, .testimonial-card, .diff-item, .pricing-card').forEach(el => {
-            observer.observe(el);
-        });
+  <section class="band band-lilac" aria-labelledby="t-etapes">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Comment on démarre</span>
+        <h2 id="t-etapes">Quatre étapes, à votre rythme</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>On fait connaissance</h3><p>30 minutes en visio pour parler de votre projet. Sans engagement.</p></li>
+        <li><h3>Vous voyez les outils</h3><p>Une démonstration complète sur un dossier d'exemple, avec vos questions.</p></li>
+        <li><h3>Vous rejoignez le Club</h3><p>Adhésion, accès aux outils et formation pour être à l'aise dès le premier dossier.</p></li>
+        <li><h3>Vous équipez votre premier client</h3><p>La licence ne démarre que lorsque votre client est actif.</p></li>
+      </ol>
+    </div>
+  </section>
 
-        // Menu mobile
-        const menuToggle = document.querySelector('.mobile-menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        menuToggle.addEventListener('click', () => {
-            const open = navMenu.classList.toggle('open');
-            menuToggle.setAttribute('aria-expanded', open);
-            menuToggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
-        });
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('open');
-                menuToggle.setAttribute('aria-expanded', 'false');
-            });
-        });
+  <section class="band" id="temoignages" aria-labelledby="t-temoignages">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Ils en parlent</span>
+        <h2 id="t-temoignages">Ce que disent les membres du Club</h2>
+      </div>
+      <div class="voices">
+        <figure class="voice voice-main">
+          <blockquote>«&nbsp;C'est cette combinaison entre des outils performants, une méthodologie, un accompagnement et une véritable communauté de professionnels qui fait, à mes yeux, toute la pertinence de nexoLink.&nbsp;»</blockquote>
+          <figcaption class="who"><span class="avatar" aria-hidden="true">A</span><span class="who-text"><b>Alain</b><small>Consultant indépendant, membre du Club nexoLink</small></span></figcaption>
+          <details class="more">
+            <summary>Lire le témoignage complet</summary>
+            <p>Après plusieurs années d'expérience dans le pilotage et l'accompagnement de dirigeants, j'ai connu différentes approches et différents outils. Ce qui me paraît particulièrement intéressant et différenciant avec nexoLink, c'est d'avoir su créer une véritable dynamique autour du métier.</p>
+            <p>Les outils proposés constituent une réelle valeur ajoutée. Ils permettent d'obtenir une lecture fine et pertinente de l'activité et de ses performances, tout en restant simples à comprendre et accessibles par tous. La restitution formalisée des suivis est claire et structurante, elle permet au chef d'entreprise de disposer d'informations concrètes et utiles pour mieux comprendre son activité, suivre ses résultats, faciliter sa prise de décision ainsi que le suivi des actions et de son historique.</p>
+            <p>nexoLink, c'est également une communauté et un accompagnement. Pouvoir échanger avec d'autres professionnels confrontés aux mêmes problématiques, partager les expériences et bénéficier des partages de chacun est une véritable richesse.</p>
+          </details>
+        </figure>
+        <figure class="voice voice-side">
+          <blockquote>«&nbsp;Au-delà des outils, c'est surtout la disponibilité et l'écoute de l'équipe que je retiens.&nbsp;»</blockquote>
+          <figcaption class="who"><span class="avatar" aria-hidden="true">E</span><span class="who-text"><b>Estelle</b><small>Ancienne consultante du Club nexoLink</small></span></figcaption>
+          <details class="more">
+            <summary>Lire le témoignage complet</summary>
+            <p>Mon expérience avec nexoLink a été une étape enrichissante dans mon parcours professionnel. J'ai particulièrement apprécié la mise à disposition d'outils performants, concrets et adaptés aux besoins de l'accompagnement des dirigeants. Ils constituent un véritable support pour analyser l'activité, mieux comprendre les enjeux économiques et apporter des réponses adaptées aux chefs d'entreprise.</p>
+            <p>Mais au-delà des outils, c'est surtout la disponibilité et l'écoute de l'équipe que je retiens. Toujours attentive aux retours du terrain, elle est dans une véritable démarche d'amélioration continue, avec la volonté de faire évoluer les outils et de répondre au mieux aux besoins des consultants.</p>
+            <p>Même si j'ai aujourd'hui pris une autre orientation professionnelle, je garde un très bon souvenir de cette collaboration et tiens à souligner la qualité de l'accompagnement et l'investissement de toute l'équipe.</p>
+          </details>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-        // Témoignages longs : Lire la suite / Réduire
-        document.querySelectorAll('.testimonial-toggle').forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const text = toggle.previousElementSibling;
-                const expanded = text.classList.toggle('expanded');
-                toggle.textContent = expanded ? 'Réduire' : 'Lire la suite';
-                toggle.setAttribute('aria-expanded', expanded);
-            });
-        });
-    </script>
+  <section class="band band-mist" id="tarifs" aria-labelledby="t-tarifs">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Tarifs</span>
+        <h2 id="t-tarifs">Un club, pas une franchise</h2>
+        <p>Vous réglez une adhésion annuelle, puis des licences seulement quand vous avez des clients. Aucun pourcentage sur vos honoraires.</p>
+      </div>
+      <div class="versus">
+        <div class="vs-row vs-head"><div></div><div class="vs-them">Ce qu'on rencontre dans les réseaux sous enseigne</div><div class="vs-us">Au Club nexoLink</div></div>
+        <div class="vs-row"><div class="vs-crit">Pour entrer</div><div class="vs-them"><span class="vs-label">Dans un réseau sous enseigne</span>Un droit d'entrée et une formation initiale payante, jusqu'à plusieurs dizaines de milliers d'euros.</div><div class="vs-us"><span class="vs-label">Au Club nexoLink</span>Une adhésion annuelle de 1&nbsp;200&nbsp;€ HT, formations aux outils comprises.</div></div>
+        <div class="vs-row"><div class="vs-crit">Chaque mois</div><div class="vs-them"><span class="vs-label">Dans un réseau sous enseigne</span>Une redevance fixe, de l'ordre de 550 à 600&nbsp;€ HT, que vous ayez des clients ou non.</div><div class="vs-us"><span class="vs-label">Au Club nexoLink</span>40&nbsp;€ HT par client actif, plafonné à 520&nbsp;€ HT. Sans client, aucune licence.</div></div>
+        <div class="vs-row"><div class="vs-crit">Votre engagement</div><div class="vs-them"><span class="vs-label">Dans un réseau sous enseigne</span>Un contrat qui peut courir sur cinq ans.</div><div class="vs-us"><span class="vs-label">Au Club nexoLink</span>Une adhésion d'un an, renouvelable.</div></div>
+        <div class="vs-row"><div class="vs-crit">Votre nom</div><div class="vs-them"><span class="vs-label">Dans un réseau sous enseigne</span>Vous exercez sous l'enseigne du réseau.</div><div class="vs-us"><span class="vs-label">Au Club nexoLink</span>Vous gardez votre nom, vos clients et vos honoraires.</div></div>
+        <div class="vs-row"><div class="vs-crit">Les tarifs</div><div class="vs-them"><span class="vs-label">Dans un réseau sous enseigne</span>Souvent communiqués seulement en rendez-vous.</div><div class="vs-us"><span class="vs-label">Au Club nexoLink</span>Publics, affichés sur cette page.</div></div>
+      </div>
+      <p class="vs-source">Ordres de grandeur relevés en octobre 2026 sur les pages publiques de réseaux de conseil en gestion.</p>
+
+      <h3 class="sub-h">La grille tarifaire</h3>
+      <p class="sub-p">Tous les montants sont hors taxes.</p>
+      <div class="prices">
+        <div class="price club">
+          <h3>Adhésion au Club</h3>
+          <p class="amount">1&nbsp;200&nbsp;€<small>HT par an, ou 110&nbsp;€ HT par mois</small></p>
+          <ul>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Communauté et forum</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Visios communautaires</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Revue de presse et fiches métier</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Formations aux outils</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Accès au coaching personnalisé</li>
+          </ul>
+        </div>
+        <div class="price">
+          <h3>Pack <span class="wm">nexo<em class="p">Pilot</em></span> + <span class="wm">nexo<em class="d">Devis</em></span></h3>
+          <p class="amount">40&nbsp;€<small>HT par mois et par client actif</small></p>
+          <ul>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>nexoPilot : pilotage de gestion</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>nexoDevis : analyse commerciale</li>
+          </ul>
+          <p class="note">Les deux outils vont ensemble. Plafonné à 13 licences, soit 520&nbsp;€ HT par mois au maximum, quel que soit votre nombre de clients.</p>
+        </div>
+        <div class="price">
+          <span class="tag">Offre de lancement</span>
+          <h3><span class="wm">nexo<em class="x">Prix</em></span></h3>
+          <p class="amount">20&nbsp;€<small>HT par mois et par client actif</small></p>
+          <ul>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Assistant de chiffrage sur mobile</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Prix cible et simulations</li>
+            <li><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Rentabilité prévisionnelle et finale</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sim">
+        <div class="sim-controls">
+          <h3>Combien ça coûte, concrètement&nbsp;?</h3>
+          <label class="sim-count" for="sim-clients">Clients suivis avec les outils :<output id="sim-n" for="sim-clients">5</output></label>
+          <input type="range" id="sim-clients" min="0" max="20" step="1" value="5">
+          <label class="check" for="sim-prix"><input type="checkbox" id="sim-prix"> Ajouter nexoPrix pour ces clients</label>
+          <p class="sim-per" id="sim-per">Soit 60&nbsp;€ HT par client suivi et par mois.</p>
+        </div>
+        <dl class="sim-lines">
+          <div><dt>Adhésion au Club<small>1&nbsp;200&nbsp;€ HT par an, ramenés au mois</small></dt><dd>100&nbsp;€</dd></div>
+          <div><dt>Pack nexoPilot + nexoDevis<small id="sim-pack-note">5 licences à 40&nbsp;€</small></dt><dd id="sim-pack">200&nbsp;€</dd></div>
+          <div id="sim-prix-row" hidden><dt>nexoPrix<small id="sim-prix-note"></small></dt><dd id="sim-prix-val"></dd></div>
+          <div class="total"><dt>Total par mois, hors taxes</dt><dd id="sim-total">300&nbsp;€</dd></div>
+        </dl>
+      </div>
+      <p class="note" style="margin-top:18px">Coaching personnalisé, en option : 160&nbsp;€ HT la session de 2&nbsp;heures, 720&nbsp;€ HT les 5 sessions, 1&nbsp;280&nbsp;€ HT les 10 sessions.</p>
+    </div>
+  </section>
+
+  <section class="band" id="reseau" aria-labelledby="t-reseau">
+    <div class="wrap network">
+      <div class="map">
+        <!-- CARTE-CONSULTANTS:DEBUT -->
+        <svg viewBox="0 0 480 472" role="img" aria-label="Carte de France des consultants du réseau nexoLink">
+          <path d="M 261.5,23.0 L 243.6,26.9 L 235.1,37.8 L 233.7,54.1 L 233.4,63.9 L 217.4,77.3 L 187.6,88.1 L 184.5,99.0 L 188.6,102.5 L 165.5,106.4 L 137.7,103.4 L 125.8,91.1 L 115.0,87.6 L 127.9,120.7 L 129.6,141.0 L 111.9,140.5 L 102.1,139.0 L 77.3,134.1 L 45.8,137.0 L 26.4,152.8 L 20.0,171.1 L 38.3,182.4 L 66.5,186.4 L 75.0,198.2 L 101.1,208.6 L 107.9,222.9 L 120.4,246.6 L 141.8,263.4 L 145.9,290.1 L 144.8,292.5 L 140.1,320.7 L 141.4,337.5 L 138.4,350.3 L 131.6,387.3 L 120.1,401.2 L 136.7,417.0 L 170.6,429.3 L 202.9,434.3 L 228.3,439.2 L 248.7,451.5 L 279.2,445.6 L 288.3,447.6 L 283.9,431.8 L 284.3,412.0 L 306.3,399.7 L 320.9,393.3 L 331.1,397.2 L 348.4,398.2 L 362.6,404.6 L 370.8,409.1 L 382.0,414.5 L 388.8,415.5 L 406.1,406.1 L 419.0,392.3 L 427.4,384.9 L 435.6,380.4 L 440.7,361.7 L 420.6,357.7 L 416.6,338.0 L 420.0,315.8 L 421.7,298.5 L 414.9,278.7 L 391.1,261.4 L 386.4,250.6 L 399.6,232.8 L 418.3,204.7 L 438.3,194.3 L 437.9,167.6 L 445.4,142.9 L 460.0,124.7 L 450.5,121.7 L 420.0,117.8 L 404.7,108.4 L 391.1,101.0 L 381.0,98.5 L 366.4,98.5 L 350.4,83.7 L 345.3,68.9 L 323.3,73.8 L 315.8,59.0 L 289.4,39.3 L 279.2,36.8 L 267.3,20.0 Z" fill="#EDE5FA" stroke="#7C3AED" stroke-width="2" stroke-linejoin="round"/>
+          <g stroke="#7C3AED" stroke-width="1.4" stroke-dasharray="4 5" opacity=".55" fill="none"><path d="M163.3 334.8 L232.5 387.6 M192.3 242.7 L159.8 325.6 M187.9 243.6 L159.8 325.6 M385.4 318.0 L247.1 403.7 M232.5 387.6 L239.1 399.7 M232.5 387.6 L247.1 403.7 M340.6 140.0 L275.7 141.4"/></g>
+          <g fill="#6A0DAD" stroke="#FFFFFF" stroke-width="2.5">
+            <circle cx="163.3" cy="334.8" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="192.3" cy="242.7" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="187.9" cy="243.6" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="385.4" cy="318.0" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="232.5" cy="387.6" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="340.6" cy="140.0" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="239.1" cy="399.7" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="275.7" cy="141.4" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="247.1" cy="403.7" r="7"><title>Consultant nexoLink</title></circle>
+            <circle cx="159.8" cy="325.6" r="7"><title>Consultant nexoLink</title></circle>
+          </g>
+        </svg>
+        <!-- CARTE-CONSULTANTS:FIN -->
+      </div>
+      <div>
+        <span class="eyebrow">Le réseau</span>
+        <h2 id="t-reseau">Des consultants partout en France, et deux fondateurs joignables</h2>
+        <p class="lead" style="margin-top:16px">nexoLink a été créé par deux praticiens du contrôle de gestion pour TPE et PME. Les outils que vous déployez sont ceux que nous utilisons chez nos propres clients.</p>
+        <div class="founders">
+          <div class="founder">
+            <img class="photo-img" src="img/clement.jpg" width="480" height="480" loading="lazy" alt="Portrait de Clément Roux">
+            <b>Clément Roux</b>
+            <span class="role">Co-fondateur</span>
+            <span>Contrôleur de gestion de terrain, il anime le Club et en développe l'activité.</span>
+          </div>
+          <div class="founder">
+            <img class="photo-img" src="img/sebastien.jpg" width="480" height="480" loading="lazy" alt="Portrait de Sébastien Rouault">
+            <b>Sébastien Rouault</b>
+            <span class="role">Co-fondateur</span>
+            <span>Il conçoit les outils, les fait évoluer, forme les membres et anime le Club.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-mist" id="faq" aria-labelledby="t-faq">
+    <div class="wrap faq">
+      <div>
+        <span class="eyebrow">Questions fréquentes</span>
+        <h2 id="t-faq">Ce qu'on nous demande le plus souvent</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>nexoLink est-il une franchise&nbsp;?</summary>
+          <p>Non. nexoLink est un club : vous restez indépendant, vous gardez votre nom, vos clients et vos honoraires. Vous réglez une adhésion annuelle de 1&nbsp;200&nbsp;€ HT, puis des licences uniquement pour vos clients actifs. Il n'y a aucun pourcentage sur votre chiffre d'affaires.</p>
+        </details>
+        <details>
+          <summary>Combien ça coûte avec 5 clients&nbsp;?</summary>
+          <p>1&nbsp;200&nbsp;€ HT d'adhésion par an, plus 40&nbsp;€ HT par mois et par client actif pour le pack nexoPilot + nexoDevis. Avec 5 clients, cela représente 200&nbsp;€ HT de licences par mois. Le pack est plafonné à 13 licences, soit 520&nbsp;€ HT par mois.</p>
+        </details>
+        <details>
+          <summary>Je démarre mon activité, est-ce fait pour moi&nbsp;?</summary>
+          <p>Oui. Tant que vous n'avez pas de client actif, vous ne payez aucune licence, seulement l'adhésion. Les formations aux outils et l'entraide du Club sont là pour vous aider à réussir vos premières missions.</p>
+        </details>
+        <details>
+          <summary>À quels clients s'adressent les outils&nbsp;?</summary>
+          <p>Aux dirigeants de TPE et PME, notamment dans le bâtiment et les services : toute entreprise qui a besoin de connaître son coût de revient, son seuil de rentabilité et la rentabilité de chaque affaire.</p>
+        </details>
+        <details>
+          <summary>Mes clients ont plusieurs activités, les outils le gèrent-ils&nbsp;?</summary>
+          <p>Oui, c'est même l'un de leurs points forts. nexoPilot calcule un coût de revient, des objectifs et un résultat pour chaque activité : la charpente et la couverture d'un charpentier-couvreur, ou le bois, le métal et le PVC d'un menuisier.</p>
+        </details>
+        <details>
+          <summary>Faut-il être contrôleur de gestion de formation&nbsp;?</summary>
+          <p>Il faut être à l'aise avec les chiffres d'une entreprise et aimer les expliquer simplement. Contrôleurs de gestion, DAF, cadres financiers : parlons de votre parcours lors d'un premier échange.</p>
+        </details>
+        <details>
+          <summary>Comment se passe le premier échange&nbsp;?</summary>
+          <p>30 minutes en visio, sans engagement. Nous vous présentons le Club et les outils, vous nous parlez de votre projet, et vous décidez ensuite à votre rythme.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="contact" aria-labelledby="t-contact">
+    <div class="wrap cta-grid">
+      <div>
+        <h2 id="t-contact">On en parle 30&nbsp;minutes&nbsp;?</h2>
+        <p>Écrivez-nous : nous vous proposons un créneau en visio, sans engagement, pour voir si le Club correspond à votre projet.</p>
+      </div>
+      <div class="cta-box">
+        <a class="btn btn-light" href="mailto:info@nexolink.fr?subject=%C3%89change%20avec%20nexoLink">Nous écrire</a>
+        <p class="mail">Notre adresse : <b>info@nexolink.fr</b></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="logo" href="#top">nexo<em>Link</em></a>
+      <nav aria-label="Pied de page">
+        <a href="#club">Le Club</a>
+        <a href="#outils">Les outils</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#faq">Questions</a>
+        <a href="#contact">Contact</a>
+        <a href="#mentions">Mentions légales</a>
+      </nav>
+    </div>
+    <p class="legal">© 2026 nexSphere SAS. nexoLink, le club des consultants en contrôle de gestion et pilotage de TPE/PME.</p>
+    <details class="legal-box" id="mentions">
+      <summary>Mentions légales et données personnelles</summary>
+      <p><strong>Éditeur.</strong> nexSphere SAS, au capital de 2&nbsp;000&nbsp;€, RCS Paris 940&nbsp;058&nbsp;035, 61 rue de Lyon, 75012 Paris. Contact : info@nexolink.fr. Directeur de la publication : Sébastien Rouault.</p>
+      <p><strong>Hébergeur.</strong> Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis.</p>
+      <p><strong>Données personnelles.</strong> Ce site ne comporte ni formulaire ni cookie publicitaire. Les messages envoyés à info@nexolink.fr servent uniquement à vous répondre. Vous pouvez demander l'accès à vos données ou leur suppression à la même adresse.</p>
+    </details>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Menu mobile
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  burger.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+  });
+
+  // Ancres internes : défilement sans changer d'adresse
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var target = document.querySelector(a.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      if (target.tagName === 'DETAILS') target.open = true;
+      nav.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      target.scrollIntoView({ block: 'start' });
+    });
+  });
+
+  // Simulateur de coût mensuel
+  var range = document.getElementById('sim-clients');
+  var prix = document.getElementById('sim-prix');
+  var euro = function (n) { return n.toLocaleString('fr-FR') + ' €'; };
+  function update() {
+    var n = Number(range.value);
+    var adhesion = 100;
+    var licences = Math.min(n, 13);
+    var pack = licences * 40;
+    var px = prix.checked ? n * 20 : 0;
+    var total = adhesion + pack + px;
+    document.getElementById('sim-n').textContent = n;
+    document.getElementById('sim-pack').textContent = euro(pack);
+    document.getElementById('sim-pack-note').textContent =
+      n === 0 ? 'Aucune licence sans client actif'
+      : n > 13 ? '13 licences facturées, plafond atteint'
+      : licences + (licences > 1 ? ' licences' : ' licence') + ' à 40 €';
+    document.getElementById('sim-prix-row').hidden = !prix.checked;
+    document.getElementById('sim-prix-val').textContent = euro(px);
+    document.getElementById('sim-prix-note').textContent = n + (n > 1 ? ' clients' : ' client') + ' à 20 €';
+    document.getElementById('sim-total').textContent = euro(total);
+    document.getElementById('sim-per').textContent = n > 0
+      ? 'Soit ' + euro(Math.round(total / n)) + ' HT par client suivi et par mois.'
+      : 'Sans client actif, vous ne payez que l’adhésion.';
+  }
+  range.addEventListener('input', update);
+  prix.addEventListener('change', update);
+  update();
+})();
+</script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@ OUTLINE = [
 
 MARK_DEBUT = "<!-- CARTE-CONSULTANTS:DEBUT -->"
 MARK_FIN = "<!-- CARTE-CONSULTANTS:FIN -->"
-INDENT = " " * 16
+INDENT = " " * 8
 
 
 def build_svg(consultants):
@@ -55,16 +55,23 @@ def build_svg(consultants):
         return ((lon * k - minx) * s + pad, (-lat - miny) * s + pad)
 
     path = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in (tr(lon, lat) for lon, lat in OUTLINE)) + " Z"
+    pts_xy = [tr(lon, lat) for _, lat, lon in consultants]
+    # Liens décoratifs : chaque point relié à son plus proche voisin (hors doublons quasi superposés)
+    links = set()
+    for i, (x, y) in enumerate(pts_xy):
+        others = [(math.dist((x, y), q), j) for j, q in enumerate(pts_xy) if j != i and math.dist((x, y), q) > 12]
+        if others:
+            links.add(tuple(sorted((i, min(others)[1]))))
+    link_d = " ".join(f"M{pts_xy[a][0]:.1f} {pts_xy[a][1]:.1f} L{pts_xy[b][0]:.1f} {pts_xy[b][1]:.1f}" for a, b in sorted(links))
     lines = [
-        f'<svg viewBox="0 0 {vw:.0f} {vh:.0f}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte de France des consultants nexoLink" style="width: 100%; height: auto; display: block;">',
-        f'    <path d="{path}" fill="rgba(106, 13, 173, 0.05)" stroke="var(--light-purple)" stroke-width="2" stroke-linejoin="round"/>',
+        f'<svg viewBox="0 0 {vw:.0f} {vh:.0f}" role="img" aria-label="Carte de France des consultants du réseau nexoLink">',
+        f'  <path d="{path}" fill="#EDE5FA" stroke="#7C3AED" stroke-width="2" stroke-linejoin="round"/>',
+        f'  <g stroke="#7C3AED" stroke-width="1.4" stroke-dasharray="4 5" opacity=".55" fill="none"><path d="{link_d}"/></g>',
+        '  <g fill="#6A0DAD" stroke="#FFFFFF" stroke-width="2.5">',
     ]
-    for _, lat, lon in consultants:
-        x, y = tr(lon, lat)
-        lines.append(
-            f'    <circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>'
-        )
-    lines.append("</svg>")
+    for x, y in pts_xy:
+        lines.append(f'    <circle cx="{x:.1f}" cy="{y:.1f}" r="7"><title>Consultant nexoLink</title></circle>')
+    lines += ["  </g>", "</svg>"]
     return "\n".join(INDENT + l for l in lines)
 
 
