@@ -406,6 +406,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 40px;
+            align-items: start;
         }
 
         .testimonial-card {
@@ -453,6 +454,42 @@
             color: var(--light-purple);
             font-weight: bold;
             margin-left: 5px;
+        }
+
+        .testimonial-content p.testimonial-long:not(.expanded) {
+            display: -webkit-box;
+            -webkit-line-clamp: 12;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .testimonial-content p.testimonial-long:not(.expanded)::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 23px;
+            margin: 0;
+            z-index: 1;
+            background: linear-gradient(rgba(106, 13, 173, 0.03), rgba(106, 13, 173, 0.03)), white;
+            border-radius: 0 0 10px 0;
+        }
+
+        .testimonial-toggle {
+            background: none;
+            border: none;
+            padding: 0;
+            margin-top: 12px;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--primary-purple);
+            cursor: pointer;
+        }
+
+        .testimonial-toggle:hover {
+            text-decoration: underline;
         }
 
         .testimonial-author {
@@ -942,34 +979,36 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
+                        <p class="testimonial-long">Après plusieurs années d'expérience dans le pilotage et l'accompagnement de dirigeants, j'ai connu différentes approches et différents outils. Ce qui me paraît particulièrement intéressant et différenciant avec nexoLink, c'est d'avoir su créer une véritable dynamique autour du métier.<br><br>Les outils proposés constituent une réelle valeur ajoutée. Ils permettent d'obtenir une lecture fine et pertinente de l'activité et de ses performances, tout en restant simples à comprendre et accessibles par tous. La restitution formalisée des suivis est claire et structurante, elle permet au chef d'entreprise de disposer d'informations concrètes et utiles pour mieux comprendre son activité, suivre ses résultats, faciliter sa prise de décision ainsi que le suivi des actions et de son historique.<br><br>nexoLink, c'est également une communauté et un accompagnement. Pouvoir échanger avec d'autres professionnels confrontés aux mêmes problématiques, partager les expériences et bénéficier des partages de chacun est une véritable richesse. C'est cette combinaison entre des outils performants, une méthodologie, un accompagnement et une véritable communauté de professionnels qui fait, à mes yeux, toute la pertinence de nexoLink.</p>
+                        <button type="button" class="testimonial-toggle" aria-expanded="false">Lire la suite</button>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h5>Alain</h5>
+                            <span>Consultant indépendant, membre du Club nexoLink</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-long">Mon expérience avec nexoLink a été une étape enrichissante dans mon parcours professionnel. J'ai particulièrement apprécié la mise à disposition d'outils performants, concrets et adaptés aux besoins de l'accompagnement des dirigeants. Ils constituent un véritable support pour analyser l'activité, mieux comprendre les enjeux économiques et apporter des réponses adaptées aux chefs d'entreprise.<br><br>Mais au-delà des outils, c'est surtout la disponibilité et l'écoute de l'équipe que je retiens. Toujours attentive aux retours du terrain, elle est dans une véritable démarche d'amélioration continue, avec la volonté de faire évoluer les outils et de répondre au mieux aux besoins des consultants.<br><br>Même si j'ai aujourd'hui pris une autre orientation professionnelle, je garde un très bon souvenir de cette collaboration et tiens à souligner la qualité de l'accompagnement et l'investissement de toute l'équipe.</p>
+                        <button type="button" class="testimonial-toggle" aria-expanded="false">Lire la suite</button>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h5>Estelle</h5>
+                            <span>Ancienne consultante du Club nexoLink</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
                         <p>Intégrer le Club nexoLink m'a offert un soutien précieux et des idées concrètes pour mener à bien mes missions. L'entraide au sein de la communauté est permanente, les bonnes pratiques sont partagées sans retenue, et l'ambiance conviviale garantit une disponibilité réelle de chacun.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-info">
                             <h5>Clémence</h5>
                             <span>Contrôleur de gestion indépendant, Nouvelle Aquitaine</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>Grâce aux outils et process de nexoLink, j'ai gagné un temps considérable : je peux massifier mon travail, toucher davantage de clients et augmenter mon chiffre d'affaires. La plateforme simplifie la gestion quotidienne et libère du temps pour développer des relations à forte valeur ajoutée.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h5>Alice</h5>
-                            <span>Consultante en gestion de PME, Grand Est</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>Le soutien technique fourni par nexoLink est d'une qualité remarquable. J'ai accès à des outils performants et évolutifs, régulièrement optimisés suite à nos retours. Cette amélioration continue me permet d'offrir à mes clients des livrables toujours plus complets et précis.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h5>Mehdi</h5>
-                            <span>Conseiller en pilotage, Ile de France</span>
                         </div>
                     </div>
                 </div>
@@ -1179,6 +1218,16 @@
         // Observe all cards and sections
         document.querySelectorAll('.approach-card, .service-card, .value-item, .testimonial-card, .diff-item, .pricing-card').forEach(el => {
             observer.observe(el);
+        });
+
+        // Témoignages longs : Lire la suite / Réduire
+        document.querySelectorAll('.testimonial-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const text = toggle.previousElementSibling;
+                const expanded = text.classList.toggle('expanded');
+                toggle.textContent = expanded ? 'Réduire' : 'Lire la suite';
+                toggle.setAttribute('aria-expanded', expanded);
+            });
         });
     </script>
 </body>
