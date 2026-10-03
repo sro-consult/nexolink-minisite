@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nexoLink - La communauté au service du pilotage d'entreprise</title>
+    <title>nexoLink : le club des consultants en contrôle de gestion</title>
+    <meta name="description" content="Club de consultants indépendants en contrôle de gestion et pilotage de TPE/PME : entraide, méthode et 3 outils à déployer chez vos clients. Tarifs publics.">
+    <link rel="canonical" href="https://www.nexolink.fr/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Aperçu au partage (LinkedIn, messageries) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="nexoLink">
+    <meta property="og:title" content="nexoLink : le club des consultants en contrôle de gestion">
+    <meta property="og:description" content="Club de consultants indépendants en contrôle de gestion et pilotage de TPE/PME : entraide, méthode et 3 outils à déployer chez vos clients. Tarifs publics.">
+    <meta property="og:url" content="https://www.nexolink.fr/">
+    <meta property="og:image" content="https://www.nexolink.fr/og-nexolink.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.nexolink.fr/#organisation",
+          "name": "nexoLink",
+          "legalName": "nexSphere SAS",
+          "url": "https://www.nexolink.fr/",
+          "logo": "https://www.nexolink.fr/nexolink-logo.png",
+          "email": "info@nexolink.fr",
+          "areaServed": "FR"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.nexolink.fr/#site",
+          "url": "https://www.nexolink.fr/",
+          "name": "nexoLink",
+          "inLanguage": "fr-FR",
+          "publisher": {
+            "@id": "https://www.nexolink.fr/#organisation"
+          }
+        }
+      ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -703,6 +748,25 @@
                 display: none;
             }
 
+            .nav-menu.open {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-white);
+                padding: 10px 20px 20px;
+                border-bottom: 1px solid var(--border-light);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            }
+
+            .nav-menu.open a {
+                display: block;
+                padding: 12px 0;
+            }
+
             .mobile-menu-toggle {
                 display: block;
             }
@@ -821,11 +885,12 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <a href="#contact" class="nav-cta">Nous Contacter</a>
-                <button class="mobile-menu-toggle">☰</button>
+                <button class="mobile-menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
             </nav>
         </div>
     </header>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero" id="accueil">
         <div class="container">
@@ -843,7 +908,7 @@
                 </div>
                 <div class="hero-visual">
                     <div class="hero-graphic">
-                        <img src="hero-illustration.png" alt="Consultation en pilotage d'entreprise - Équipe de consultants autour d'un tableau de bord" class="hero-illustration">
+                        <img src="hero-illustration.webp" width="800" height="800" fetchpriority="high" alt="Consultation en pilotage d'entreprise - Équipe de consultants autour d'un tableau de bord" class="hero-illustration">
                     </div>
                 </div>
             </div>
@@ -1143,6 +1208,7 @@
                     <circle cx="239.1" cy="399.7" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
                     <circle cx="275.7" cy="141.4" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
                     <circle cx="247.1" cy="403.7" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
+                    <circle cx="159.8" cy="325.6" r="7" fill="var(--primary-purple)" stroke="white" stroke-width="2.5" opacity="0.9"><title>Consultant nexoLink</title></circle>
                 </svg>
                 <!-- CARTE-CONSULTANTS:FIN -->
             </div>
@@ -1167,10 +1233,12 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 nexoLink. Tous droits réservés. | La communauté au service du pilotage d'entreprise</p>
+            <p>&copy; 2026 nexoLink. Tous droits réservés. | La communauté au service du pilotage d'entreprise</p>
         </div>
     </footer>
 
@@ -1218,6 +1286,21 @@
         // Observe all cards and sections
         document.querySelectorAll('.approach-card, .service-card, .value-item, .testimonial-card, .diff-item, .pricing-card').forEach(el => {
             observer.observe(el);
+        });
+
+        // Menu mobile
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        menuToggle.addEventListener('click', () => {
+            const open = navMenu.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', open);
+            menuToggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+        });
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
         });
 
         // Témoignages longs : Lire la suite / Réduire
