@@ -29,7 +29,25 @@
       "logo": "https://www.nexolink.fr/nexolink-logo.png",
       "email": "info@nexolink.fr",
       "description": "Club de consultants indépendants en contrôle de gestion et pilotage de TPE/PME : entraide, méthode et 3 outils à déployer chez vos clients. Tarifs publics.",
-      "areaServed": "FR"
+      "areaServed": "FR",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Clément Roux",
+          "jobTitle": "Co-fondateur",
+          "sameAs": [
+            "https://www.linkedin.com/in/clement-roux-609926160/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Sébastien Rouault",
+          "jobTitle": "Co-fondateur",
+          "sameAs": [
+            "https://www.linkedin.com/in/sebastien-rouault-nexsphere/"
+          ]
+        }
+      ]
     },
     {
       "@type": "WebSite",
@@ -398,6 +416,10 @@ details.more p { margin-top: 12px; color: var(--muted); font-size: 16px; }
 .founder .role { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--violet-deep); }
 .photo-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px; background: var(--mist); }
 .founder span { font-size: 15px; color: var(--muted); }
+.founder .li { display: inline-flex; align-items: center; gap: 7px; margin-top: 4px; font-size: 15px; font-weight: 700; color: var(--violet-deep); text-decoration: none; }
+.founder .li:hover { text-decoration: underline; text-underline-offset: 3px; }
+.founder .li svg { width: 17px; height: 17px; fill: currentColor; flex: none; }
+.founder .li .sr-only, .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* FAQ */
 .faq { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 56px; align-items: start; }
@@ -898,12 +920,14 @@ details.more p { margin-top: 12px; color: var(--muted); font-size: 16px; }
             <b>Clément Roux</b>
             <span class="role">Co-fondateur</span>
             <span>Contrôleur de gestion de terrain, il anime le Club et en développe l'activité.</span>
+            <a class="li" href="https://www.linkedin.com/in/clement-roux-609926160/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn<span class="sr-only"> de Clément Roux</span></a>
           </div>
           <div class="founder">
             <img class="photo-img" src="img/sebastien.jpg" width="480" height="480" loading="lazy" alt="Portrait de Sébastien Rouault">
             <b>Sébastien Rouault</b>
             <span class="role">Co-fondateur</span>
             <span>Il conçoit les outils, les fait évoluer, forme les membres et anime le Club.</span>
+            <a class="li" href="https://www.linkedin.com/in/sebastien-rouault-nexsphere/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn<span class="sr-only"> de Sébastien Rouault</span></a>
           </div>
         </div>
       </div>
